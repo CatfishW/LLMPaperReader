@@ -1,0 +1,915 @@
+[
+  {
+    "rank": 1,
+    "category": "LLM Benchmarks",
+    "title": "Reward-free Alignment for Conflicting Objectives",
+    "year": "2026",
+    "authors": [
+      "Peter Chen",
+      "Xiaopeng Li",
+      "Xi Chen",
+      "Tianyi Lin"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02495v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02495v1.pdf",
+    "filename": "01_reward-free-alignment-for-conflicting-objectives_2602.02495v1.pdf"
+  },
+  {
+    "rank": 2,
+    "category": "LLM Benchmarks",
+    "title": "Training LLMs for Divide-and-Conquer Reasoning Elevates Test-Time Scalability",
+    "year": "2026",
+    "authors": [
+      "Xiao Liang",
+      "Zhong-Zhi Li",
+      "Zhenghao Lin",
+      "Eric Hancheng Jiang",
+      "Hengyuan Zhang",
+      "Yelong Shen",
+      "Kai-Wei Chang",
+      "Ying Nian Wu",
+      "Yeyun Gong",
+      "Weizhu Chen"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02477v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02477v1.pdf",
+    "filename": "02_training-llms-for-divide-and-conquer-reasoning-elevates-test-time-scalability_2602.02477v1.pdf"
+  },
+  {
+    "rank": 3,
+    "category": "LLM Benchmarks",
+    "title": "Avenir-Web: Human-Experience-Imitating Multimodal Web Agents with Mixture of Grounding Experts",
+    "year": "2026",
+    "authors": [
+      "Aiden Yiliu Li",
+      "Xinyue Hao",
+      "Shilong Liu",
+      "Mengdi Wang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02468v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02468v1.pdf",
+    "filename": "03_avenir-web-human-experience-imitating-multimodal-web-agents-with-mixture-of-grounding-experts_2602.02468v1.pdf"
+  },
+  {
+    "rank": 4,
+    "category": "LLM Benchmarks",
+    "title": "Indications of Belief-Guided Agency and Meta-Cognitive Monitoring in Large Language Models",
+    "year": "2026",
+    "authors": [
+      "Noam Steinmetz Yalon",
+      "Ariel Goldstein",
+      "Liad Mudrik",
+      "Mor Geva"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02467v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02467v1.pdf",
+    "filename": "04_indications-of-belief-guided-agency-and-meta-cognitive-monitoring-in-large-language-models_2602.02467v1.pdf"
+  },
+  {
+    "rank": 5,
+    "category": "LLM Benchmarks",
+    "title": "Drift-Bench: Diagnosing Cooperative Breakdowns in LLM Agents under Input Faults via Multi-Turn Interaction",
+    "year": "2026",
+    "authors": [
+      "Han Bao",
+      "Zheyuan Zhang",
+      "Pengcheng Jing",
+      "Zhengqing Yuan",
+      "Kaiwen Shi",
+      "Yanfang Ye"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02455v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02455v1.pdf",
+    "filename": "05_drift-bench-diagnosing-cooperative-breakdowns-in-llm-agents-under-input-faults-via-multi-turn-interaction_2602.02455v1.pdf"
+  },
+  {
+    "rank": 6,
+    "category": "Prompt Strategies",
+    "title": "Active Causal Experimentalist (ACE): Learning Intervention Strategies via Direct Preference Optimization",
+    "year": "2026",
+    "authors": [
+      "Patrick Cooper",
+      "Alvaro Velasquez"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02451v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02451v1",
+    "filename": "06_active-causal-experimentalist-ace-learning-intervention-strategies-via-direct-preference-optimization_2602.02451v1.pdf"
+  },
+  {
+    "rank": 7,
+    "category": "LLM Benchmarks",
+    "title": "Large Language Models for Mental Health: A Multilingual Evaluation",
+    "year": "2026",
+    "authors": [
+      "Nishat Raihan",
+      "Sadiya Sayara Chowdhury Puspo",
+      "Ana-Maria Bucur",
+      "Stevie Chancellor",
+      "Marcos Zampieri"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02440v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02440v1.pdf",
+    "filename": "07_large-language-models-for-mental-health-a-multilingual-evaluation_2602.02440v1.pdf"
+  },
+  {
+    "rank": 8,
+    "category": "LLM Benchmarks",
+    "title": "Misconception Diagnosis From Student-Tutor Dialogue: Generate, Retrieve, Rerank",
+    "year": "2026",
+    "authors": [
+      "Joshua Mitton",
+      "Prarthana Bhattacharyya",
+      "Digory Smith",
+      "Thomas Christie",
+      "Ralph Abboud",
+      "Simon Woodhead"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02414v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02414v1.pdf",
+    "filename": "08_misconception-diagnosis-from-student-tutor-dialogue-generate-retrieve-rerank_2602.02414v1.pdf"
+  },
+  {
+    "rank": 9,
+    "category": "LLM Benchmarks",
+    "title": "ROG: Retrieval-Augmented LLM Reasoning for Complex First-Order Queries over Knowledge Graphs",
+    "year": "2026",
+    "authors": [
+      "Ziyan Zhang",
+      "Chao Wang",
+      "Zhuo Chen",
+      "Chiyi Li",
+      "Kai Song"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02382v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02382v1.pdf",
+    "filename": "09_rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs_2602.02382v1.pdf"
+  },
+  {
+    "rank": 10,
+    "category": "LLM Benchmarks",
+    "title": "From Sycophancy to Sensemaking: Premise Governance for Human-AI Decision Making",
+    "year": "2026",
+    "authors": [
+      "Raunak Jain",
+      "Mudita Khurana",
+      "John Stephens",
+      "Srinivas Dharmasanam",
+      "Shankar Venkataraman"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02378v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02378v1.pdf",
+    "filename": "10_from-sycophancy-to-sensemaking-premise-governance-for-human-ai-decision-making_2602.02378v1.pdf"
+  },
+  {
+    "rank": 11,
+    "category": "LLM Benchmarks",
+    "title": "Proof-RM: A Scalable and Generalizable Reward Model for Math Proof",
+    "year": "2026",
+    "authors": [
+      "Haotong Yang",
+      "Zitong Wang",
+      "Shijia Kang",
+      "Siqi Yang",
+      "Wenkai Yu",
+      "Xu Niu",
+      "Yike Sun",
+      "Yi Hu",
+      "Zhouchen Lin",
+      "Muhan Zhang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02377v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02377v1.pdf",
+    "filename": "11_proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof_2602.02377v1.pdf"
+  },
+  {
+    "rank": 12,
+    "category": "LLM Benchmarks",
+    "title": "Automated Multiple Mini Interview (MMI) Scoring",
+    "year": "2026",
+    "authors": [
+      "Ryan Huynh",
+      "Frank Guerin",
+      "Alison Callwood"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02360v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02360v1.pdf",
+    "filename": "12_automated-multiple-mini-interview-mmi-scoring_2602.02360v1.pdf"
+  },
+  {
+    "rank": 13,
+    "category": "LLM Benchmarks",
+    "title": "Language Steering for Multilingual In-Context Learning",
+    "year": "2026",
+    "authors": [
+      "Neeraja Kirtane",
+      "Kuan-Hao Huang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02326v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02326v1.pdf",
+    "filename": "13_language-steering-for-multilingual-in-context-learning_2602.02326v1.pdf"
+  },
+  {
+    "rank": 14,
+    "category": "LLM Benchmarks",
+    "title": "A Large-Scale Dataset for Molecular Structure-Language Description via a Rule-Regularized Method",
+    "year": "2026",
+    "authors": [
+      "Feiyang Cai",
+      "Guijuan He",
+      "Yi Hu",
+      "Jingjing Wang",
+      "Joshua Luo",
+      "Tianyu Zhu",
+      "Srikanth Pilla",
+      "Gang Li",
+      "Ling Liu",
+      "Feng Luo"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02320v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02320v1.pdf",
+    "filename": "14_a-large-scale-dataset-for-molecular-structure-language-description-via-a-rule-regularized-method_2602.02320v1.pdf"
+  },
+  {
+    "rank": 15,
+    "category": "Prompt Strategies",
+    "title": "The Shape of Beliefs: Geometry, Dynamics, and Interventions along Representation Manifolds of Language Models' Posteriors",
+    "year": "2026",
+    "authors": [
+      "Raphaël Sarfati",
+      "Eric Bigelow",
+      "Daniel Wurgaft",
+      "Jack Merullo",
+      "Atticus Geiger",
+      "Owen Lewis",
+      "Tom McGrath",
+      "Ekdeep Singh Lubana"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02315v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02315v1.pdf",
+    "filename": "15_the-shape-of-beliefs-geometry-dynamics-and-interventions-along-representation-manifolds-of-language-models-posteriors_2602.02315v1.pdf"
+  },
+  {
+    "rank": 16,
+    "category": "LLM Benchmarks",
+    "title": "Interpreting and Controlling LLM Reasoning through Integrated Policy Gradient",
+    "year": "2026",
+    "authors": [
+      "Changming Li",
+      "Kaixing Zhang",
+      "Haoyun Xu",
+      "Yingdong Shi",
+      "Zheng Zhang",
+      "Kaitao Song",
+      "Kan Ren"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02313v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02313v1.pdf",
+    "filename": "16_interpreting-and-controlling-llm-reasoning-through-integrated-policy-gradient_2602.02313v1.pdf"
+  },
+  {
+    "rank": 17,
+    "category": "LLM Benchmarks",
+    "title": "Cross-Lingual Stability of LLM Judges Under Controlled Generation: Evidence from Finno-Ugric Languages",
+    "year": "2026",
+    "authors": [
+      "Isaac Chung",
+      "Linda Freienthal"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02287v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02287v1.pdf",
+    "filename": "17_cross-lingual-stability-of-llm-judges-under-controlled-generation-evidence-from-finno-ugric-languages_2602.02287v1.pdf"
+  },
+  {
+    "rank": 18,
+    "category": "LLM Benchmarks",
+    "title": "RACA: Representation-Aware Coverage Criteria for LLM Safety Testing",
+    "year": "2026",
+    "authors": [
+      "Zeming Wei",
+      "Zhixin Zhang",
+      "Chengcan Wu",
+      "Yihao Zhang",
+      "Xiaokun Luan",
+      "Meng Sun"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02280v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02280v1.pdf",
+    "filename": "18_raca-representation-aware-coverage-criteria-for-llm-safety-testing_2602.02280v1.pdf"
+  },
+  {
+    "rank": 19,
+    "category": "LLM Benchmarks",
+    "title": "OmniCode: A Benchmark for Evaluating Software Engineering Agents",
+    "year": "2026",
+    "authors": [
+      "Atharv Sonwane",
+      "Eng-Shen Tu",
+      "Wei-Chung Lu",
+      "Claas Beger",
+      "Carter Larsen",
+      "Debjit Dhar",
+      "Rachel Chen",
+      "Ronit Pattanayak",
+      "Tuan Anh Dang",
+      "Guohao Chen"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02262v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02262v1.pdf",
+    "filename": "19_omnicode-a-benchmark-for-evaluating-software-engineering-agents_2602.02262v1.pdf"
+  },
+  {
+    "rank": 20,
+    "category": "Prompt Strategies",
+    "title": "Am I More Pointwise or Pairwise? Revealing Position Bias in Rubric-Based LLM-as-a-Judge",
+    "year": "2026",
+    "authors": [
+      "Yuzheng Xu",
+      "Tosho Hirasawa",
+      "Tadashi Kozuno",
+      "Yoshitaka Ushiku"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02219v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02219v1",
+    "filename": "20_am-i-more-pointwise-or-pairwise-revealing-position-bias-in-rubric-based-llm-as-a-judge_2602.02219v1.pdf"
+  },
+  {
+    "rank": 21,
+    "category": "LLM Benchmarks",
+    "title": "Towards AI Evaluation in Domain-Specific RAG Systems: The AgriHubi Case Study",
+    "year": "2026",
+    "authors": [
+      "Md. Toufique Hasan",
+      "Ayman Asad Khan",
+      "Mika Saari",
+      "Vaishnavi Bankhele",
+      "Pekka Abrahamsson"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02208v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02208v1.pdf",
+    "filename": "21_towards-ai-evaluation-in-domain-specific-rag-systems-the-agrihubi-case-study_2602.02208v1.pdf"
+  },
+  {
+    "rank": 22,
+    "category": "LLM Benchmarks",
+    "title": "More Than a Quick Glance: Overcoming the Greedy Bias in KV-Cache Compression",
+    "year": "2026",
+    "authors": [
+      "Aryan Sood",
+      "Tanvi Sharma",
+      "Vansh Agrawal"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02199v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02199v1.pdf",
+    "filename": "22_more-than-a-quick-glance-overcoming-the-greedy-bias-in-kv-cache-compression_2602.02199v1.pdf"
+  },
+  {
+    "rank": 23,
+    "category": "LLM Benchmarks",
+    "title": "Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models",
+    "year": "2026",
+    "authors": [
+      "Yu Zeng",
+      "Wenxuan Huang",
+      "Zhen Fang",
+      "Shuang Chen",
+      "Yufan Shen",
+      "Yishuo Cai",
+      "Xiaoman Wang",
+      "Zhenfei Yin",
+      "Lin Chen",
+      "Zehui Chen"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02185v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02185v1.pdf",
+    "filename": "23_vision-deepresearch-benchmark-rethinking-visual-and-textual-search-for-multimodal-large-language-models_2602.02185v1.pdf"
+  },
+  {
+    "rank": 24,
+    "category": "LLM Benchmarks",
+    "title": "Evaluating Metalinguistic Knowledge in Large Language Models across the World's Languages",
+    "year": "2026",
+    "authors": [
+      "Tjaša Arčon",
+      "Matej Klemen",
+      "Marko Robnik-Šikonja",
+      "Kaja Dobrovoljc"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02182v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02182v1.pdf",
+    "filename": "24_evaluating-metalinguistic-knowledge-in-large-language-models-across-the-world-s-languages_2602.02182v1.pdf"
+  },
+  {
+    "rank": 25,
+    "category": "LLM Benchmarks",
+    "title": "Learning Generative Selection for Best-of-N",
+    "year": "2026",
+    "authors": [
+      "Shubham Toshniwal",
+      "Aleksander Ficek",
+      "Siddhartha Jain",
+      "Wei Du",
+      "Vahid Noroozi",
+      "Sadegh Mahdavi",
+      "Somshubra Majumdar",
+      "Igor Gitman"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02143v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02143v1.pdf",
+    "filename": "25_learning-generative-selection-for-best-of-n_2602.02143v1.pdf"
+  },
+  {
+    "rank": 26,
+    "category": "LLM Benchmarks",
+    "title": "Dicta-LM 3.0: Advancing The Frontier of Hebrew Sovereign LLMs",
+    "year": "2026",
+    "authors": [
+      "Shaltiel Shmidman",
+      "Avi Shmidman",
+      "Amir DN Cohen",
+      "Moshe Koppel"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02104v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02104v1.pdf",
+    "filename": "26_dicta-lm-3-0-advancing-the-frontier-of-hebrew-sovereign-llms_2602.02104v1.pdf"
+  },
+  {
+    "rank": 27,
+    "category": "LLM Benchmarks",
+    "title": "LEC-KG: An LLM-Embedding Collaborative Framework for Domain-Specific Knowledge Graph Construction -- A Case Study on SDGs",
+    "year": "2026",
+    "authors": [
+      "Yikai Zeng",
+      "Yingchao Piao",
+      "Jianhui Li"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02090v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02090v1.pdf",
+    "filename": "27_lec-kg-an-llm-embedding-collaborative-framework-for-domain-specific-knowledge-graph-construction-a-case-study-on-sdgs_2602.02090v1.pdf"
+  },
+  {
+    "rank": 28,
+    "category": "LLM Benchmarks",
+    "title": "Hunt Instead of Wait: Evaluating Deep Data Research on Large Language Models",
+    "year": "2026",
+    "authors": [
+      "Wei Liu",
+      "Peijie Yu",
+      "Michele Orini",
+      "Yali Du",
+      "Yulan He"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02039v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02039v1.pdf",
+    "filename": "28_hunt-instead-of-wait-evaluating-deep-data-research-on-large-language-models_2602.02039v1.pdf"
+  },
+  {
+    "rank": 29,
+    "category": "LLM Benchmarks",
+    "title": "Rethinking Genomic Modeling Through Optical Character Recognition",
+    "year": "2026",
+    "authors": [
+      "Hongxin Xiang",
+      "Pengsen Ma",
+      "Yunkang Cao",
+      "Di Yu",
+      "Haowen Chen",
+      "Xinyu Yang",
+      "Xiangxiang Zeng"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02014v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02014v1.pdf",
+    "filename": "29_rethinking-genomic-modeling-through-optical-character-recognition_2602.02014v1.pdf"
+  },
+  {
+    "rank": 30,
+    "category": "Prompt Strategies",
+    "title": "Automatic Prompt Optimization for Dataset-Level Feature Discovery",
+    "year": "2026",
+    "authors": [
+      "Adrian Cosma",
+      "Oleg Szehr",
+      "David Kletz",
+      "Alessandro Antonucci",
+      "Olivier Pelletier"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2601.13922v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.13922v1",
+    "filename": "30_automatic-prompt-optimization-for-dataset-level-feature-discovery_2601.13922v1.pdf"
+  },
+  {
+    "rank": 31,
+    "category": "Prompt Strategies",
+    "title": "GeoSteer: Faithful Chain-of-Thought Steering via Latent Manifold Gradients",
+    "year": "2026",
+    "authors": [
+      "Kentaro Kazama",
+      "Daiki Shirafuji",
+      "Tatsuhiko Saito"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2601.10229v2",
+    "pdf_url": "https://arxiv.org/pdf/2601.10229v2",
+    "filename": "31_geosteer-faithful-chain-of-thought-steering-via-latent-manifold-gradients_2601.10229v2.pdf"
+  },
+  {
+    "rank": 32,
+    "category": "Prompt Strategies",
+    "title": "Automatic Prompt Engineering with No Task Cues and No Tuning",
+    "year": "2026",
+    "authors": [
+      "Faisal Chowdhury",
+      "Nandana Mihindukulasooriya",
+      "Niharika S D'Souza",
+      "Horst Samulowitz",
+      "Neeru Gupta",
+      "Tomasz Hanusiak",
+      "Michal Kapitonow"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2601.03130v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.03130v1",
+    "filename": "32_automatic-prompt-engineering-with-no-task-cues-and-no-tuning_2601.03130v1.pdf"
+  },
+  {
+    "rank": 33,
+    "category": "Prompt Strategies",
+    "title": "ELPO: Ensemble Learning Based Prompt Optimization for Large Language Models",
+    "year": "2025",
+    "authors": [
+      "Qing Zhang",
+      "Bing Xu",
+      "Xudong Zhang",
+      "Yifan Shi",
+      "Yang Li",
+      "Chen Zhang",
+      "Yik Chung Wu",
+      "Ngai Wong",
+      "Yijie Chen",
+      "Hong Dai"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2511.16122v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.16122v1",
+    "filename": "33_elpo-ensemble-learning-based-prompt-optimization-for-large-language-models_2511.16122v1.pdf"
+  },
+  {
+    "rank": 34,
+    "category": "LLM Benchmarks",
+    "title": "Effectiveness of Chain-of-Thought in Distilling Reasoning Capability from Large Language Models",
+    "year": "2025",
+    "authors": [
+      "Cong-Thanh Do",
+      "Rama Doddipatla",
+      "Kate Knill"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2511.05184v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.05184v1",
+    "filename": "34_effectiveness-of-chain-of-thought-in-distilling-reasoning-capability-from-large-language-models_2511.05184v1.pdf"
+  },
+  {
+    "rank": 35,
+    "category": "Prompt Strategies",
+    "title": "RLAIF-SPA: Optimizing LLM-based Emotional Speech Synthesis via RLAIF",
+    "year": "2025",
+    "authors": [
+      "Qing Yang",
+      "Zhenghao Liu",
+      "Junxin Wang",
+      "Yangfan Du",
+      "Pengcheng Huang",
+      "Tong Xiao"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2510.14628v1",
+    "pdf_url": "https://arxiv.org/pdf/2510.14628v1",
+    "filename": "35_rlaif-spa-optimizing-llm-based-emotional-speech-synthesis-via-rlaif_2510.14628v1.pdf"
+  },
+  {
+    "rank": 36,
+    "category": "LLM Benchmarks",
+    "title": "GSM8K-V: Can Vision Language Models Solve Grade School Math Word Problems in Visual Contexts",
+    "year": "2025",
+    "authors": [
+      "Fan Yuan",
+      "Yuchen Yan",
+      "Yifan Jiang",
+      "Haoran Zhao",
+      "Tao Feng",
+      "Jinyan Chen",
+      "Yanwei Lou",
+      "Wenqi Zhang",
+      "Yongliang Shen",
+      "Weiming Lu"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2509.25160v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.25160v1",
+    "filename": "36_gsm8k-v-can-vision-language-models-solve-grade-school-math-word-problems-in-visual-contexts_2509.25160v1.pdf"
+  },
+  {
+    "rank": 37,
+    "category": "LLM Benchmarks",
+    "title": "ViLLA-MMBench: A Unified Benchmark Suite for LLM-Augmented Multimodal Movie Recommendation",
+    "year": "2025",
+    "authors": [
+      "Fatemeh Nazary",
+      "Ali Tourani",
+      "Yashar Deldjoo",
+      "Tommaso Di Noia"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2508.04206v1",
+    "pdf_url": "https://arxiv.org/pdf/2508.04206v1",
+    "filename": "37_villa-mmbench-a-unified-benchmark-suite-for-llm-augmented-multimodal-movie-recommendation_2508.04206v1.pdf"
+  },
+  {
+    "rank": 38,
+    "category": "Prompt Strategies",
+    "title": "ADePT: Adaptive Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+    "year": "2025",
+    "authors": [
+      "Pengwei Tang",
+      "Xiaolin Hu",
+      "Yong Liu"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2501.03291v3",
+    "pdf_url": "https://arxiv.org/pdf/2501.03291v3",
+    "filename": "38_adept-adaptive-decomposed-prompt-tuning-for-parameter-efficient-fine-tuning_2501.03291v3.pdf"
+  },
+  {
+    "rank": 39,
+    "category": "LLM Benchmarks",
+    "title": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+    "year": "2024",
+    "authors": [
+      "John Yang",
+      "Carlos E. Jimenez",
+      "Alex L. Zhang",
+      "Kilian Lieret",
+      "Joyce Yang",
+      "Xindi Wu",
+      "Ori Press",
+      "Niklas Muennighoff",
+      "Gabriel Synnaeve",
+      "Karthik R. Narasimhan"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2410.03859v1",
+    "pdf_url": "https://arxiv.org/pdf/2410.03859v1",
+    "filename": "39_swe-bench-multimodal-do-ai-systems-generalize-to-visual-software-domains_2410.03859v1.pdf"
+  },
+  {
+    "rank": 40,
+    "category": "LLM Benchmarks",
+    "title": "From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline",
+    "year": "2024",
+    "authors": [
+      "Tianle Li",
+      "Wei-Lin Chiang",
+      "Evan Frick",
+      "Lisa Dunlap",
+      "Tianhao Wu",
+      "Banghua Zhu",
+      "Joseph E. Gonzalez",
+      "Ion Stoica"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2406.11939v2",
+    "pdf_url": "https://arxiv.org/pdf/2406.11939v2",
+    "filename": "40_from-crowdsourced-data-to-high-quality-benchmarks-arena-hard-and-benchbuilder-pipeline_2406.11939v2.pdf"
+  },
+  {
+    "rank": 41,
+    "category": "LLM Benchmarks",
+    "title": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+    "year": "2024",
+    "authors": [
+      "Wei-Lin Chiang",
+      "Lianmin Zheng",
+      "Ying Sheng",
+      "Anastasios Nikolas Angelopoulos",
+      "Tianle Li",
+      "Dacheng Li",
+      "Hao Zhang",
+      "Banghua Zhu",
+      "Michael Jordan",
+      "Joseph E. Gonzalez"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2403.04132v1",
+    "pdf_url": "https://arxiv.org/pdf/2403.04132v1",
+    "filename": "41_chatbot-arena-an-open-platform-for-evaluating-llms-by-human-preference_2403.04132v1.pdf"
+  },
+  {
+    "rank": 42,
+    "category": "LLM Benchmarks",
+    "title": "MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI",
+    "year": "2023",
+    "authors": [
+      "Xiang Yue",
+      "Yuansheng Ni",
+      "Kai Zhang",
+      "Tianyu Zheng",
+      "Ruoqi Liu",
+      "Ge Zhang",
+      "Samuel Stevens",
+      "Dongfu Jiang",
+      "Weiming Ren",
+      "Yuxuan Sun"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2311.16502v4",
+    "pdf_url": "https://arxiv.org/pdf/2311.16502v4",
+    "filename": "42_mmmu-a-massive-multi-discipline-multimodal-understanding-and-reasoning-benchmark-for-expert-agi_2311.16502v4.pdf"
+  },
+  {
+    "rank": 43,
+    "category": "LLM Benchmarks",
+    "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+    "year": "2023",
+    "authors": [
+      "David Rein",
+      "Betty Li Hou",
+      "Asa Cooper Stickland",
+      "Jackson Petty",
+      "Richard Yuanzhe Pang",
+      "Julien Dirani",
+      "Julian Michael",
+      "Samuel R. Bowman"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2311.12022v1",
+    "pdf_url": "https://arxiv.org/pdf/2311.12022v1",
+    "filename": "43_gpqa-a-graduate-level-google-proof-q-a-benchmark_2311.12022v1.pdf"
+  },
+  {
+    "rank": 44,
+    "category": "LLM Benchmarks",
+    "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "year": "2023",
+    "authors": [
+      "Carlos E. Jimenez",
+      "John Yang",
+      "Alexander Wettig",
+      "Shunyu Yao",
+      "Kexin Pei",
+      "Ofir Press",
+      "Karthik Narasimhan"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2310.06770v3",
+    "pdf_url": "https://arxiv.org/pdf/2310.06770v3",
+    "filename": "44_swe-bench-can-language-models-resolve-real-world-github-issues_2310.06770v3.pdf"
+  },
+  {
+    "rank": 45,
+    "category": "Prompt Strategies",
+    "title": "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+    "year": "2023",
+    "authors": [
+      "Huaixiu Steven Zheng",
+      "Swaroop Mishra",
+      "Xinyun Chen",
+      "Heng-Tze Cheng",
+      "Ed H. Chi",
+      "Quoc V Le",
+      "Denny Zhou"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2310.06117v2",
+    "pdf_url": "https://arxiv.org/pdf/2310.06117v2",
+    "filename": "45_take-a-step-back-evoking-reasoning-via-abstraction-in-large-language-models_2310.06117v2.pdf"
+  },
+  {
+    "rank": 46,
+    "category": "Prompt Strategies",
+    "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines",
+    "year": "2023",
+    "authors": [
+      "Omar Khattab",
+      "Arnav Singhvi",
+      "Paridhi Maheshwari",
+      "Zhiyuan Zhang",
+      "Keshav Santhanam",
+      "Sri Vardhamanan",
+      "Saiful Haq",
+      "Ashutosh Sharma",
+      "Thomas T. Joshi",
+      "Hanna Moazam"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2310.03714v1",
+    "pdf_url": "https://arxiv.org/pdf/2310.03714v1",
+    "filename": "46_dspy-compiling-declarative-language-model-calls-into-self-improving-pipelines_2310.03714v1.pdf"
+  },
+  {
+    "rank": 47,
+    "category": "Prompt Strategies",
+    "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+    "year": "2023",
+    "authors": [
+      "Maciej Besta",
+      "Nils Blach",
+      "Ales Kubicek",
+      "Robert Gerstenberger",
+      "Michal Podstawski",
+      "Lukas Gianinazzi",
+      "Joanna Gajda",
+      "Tomasz Lehmann",
+      "Hubert Niewiadomski",
+      "Piotr Nyczyk"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2308.09687v4",
+    "pdf_url": "https://arxiv.org/pdf/2308.09687v4",
+    "filename": "47_graph-of-thoughts-solving-elaborate-problems-with-large-language-models_2308.09687v4.pdf"
+  },
+  {
+    "rank": 48,
+    "category": "LLM Benchmarks",
+    "title": "AgentBench: Evaluating LLMs as Agents",
+    "year": "2023",
+    "authors": [
+      "Xiao Liu",
+      "Hao Yu",
+      "Hanchen Zhang",
+      "Yifan Xu",
+      "Xuanyu Lei",
+      "Hanyu Lai",
+      "Yu Gu",
+      "Hangliang Ding",
+      "Kaiwen Men",
+      "Kejuan Yang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2308.03688v3",
+    "pdf_url": "https://arxiv.org/pdf/2308.03688v3",
+    "filename": "48_agentbench-evaluating-llms-as-agents_2308.03688v3.pdf"
+  },
+  {
+    "rank": 49,
+    "category": "Prompt Strategies",
+    "title": "Skeleton-of-Thought: Prompting LLMs for Efficient Parallel Generation",
+    "year": "2023",
+    "authors": [
+      "Xuefei Ning",
+      "Zinan Lin",
+      "Zixuan Zhou",
+      "Zifu Wang",
+      "Huazhong Yang",
+      "Yu Wang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2307.15337v3",
+    "pdf_url": "https://arxiv.org/pdf/2307.15337v3",
+    "filename": "49_skeleton-of-thought-prompting-llms-for-efficient-parallel-generation_2307.15337v3.pdf"
+  },
+  {
+    "rank": 50,
+    "category": "Prompt Strategies",
+    "title": "PromptAttack: Probing Dialogue State Trackers with Adversarial Prompts",
+    "year": "2023",
+    "authors": [
+      "Xiangjue Dong",
+      "Yun He",
+      "Ziwei Zhu",
+      "James Caverlee"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2306.04535v1",
+    "pdf_url": "https://arxiv.org/pdf/2306.04535v1",
+    "filename": "50_promptattack-probing-dialogue-state-trackers-with-adversarial-prompts_2306.04535v1.pdf"
+  }
+]

@@ -1,0 +1,541 @@
+[
+  {
+    "rank": 1,
+    "category": "LLM Benchmarks",
+    "title": "Large Language Models for Mental Health: A Multilingual Evaluation",
+    "year": "2026",
+    "authors": [
+      "Nishat Raihan",
+      "Sadiya Sayara Chowdhury Puspo",
+      "Ana-Maria Bucur",
+      "Stevie Chancellor",
+      "Marcos Zampieri"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02440v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02440v1.pdf",
+    "filename": "01_large-language-models-for-mental-health-a-multilingual-evaluation_2602.02440v1.pdf",
+    "score": 17,
+    "published": "2026-02-02T18:34:53Z"
+  },
+  {
+    "rank": 2,
+    "category": "LLM Benchmarks",
+    "title": "ROG: Retrieval-Augmented LLM Reasoning for Complex First-Order Queries over Knowledge Graphs",
+    "year": "2026",
+    "authors": [
+      "Ziyan Zhang",
+      "Chao Wang",
+      "Zhuo Chen",
+      "Chiyi Li",
+      "Kai Song"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02382v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02382v1.pdf",
+    "filename": "02_rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs_2602.02382v1.pdf",
+    "score": 14,
+    "published": "2026-02-02T17:45:43Z"
+  },
+  {
+    "rank": 3,
+    "category": "LLM Benchmarks",
+    "title": "Proof-RM: A Scalable and Generalizable Reward Model for Math Proof",
+    "year": "2026",
+    "authors": [
+      "Haotong Yang",
+      "Zitong Wang",
+      "Shijia Kang",
+      "Siqi Yang",
+      "Wenkai Yu",
+      "Xu Niu",
+      "Yike Sun",
+      "Yi Hu",
+      "Zhouchen Lin",
+      "Muhan Zhang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02377v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02377v1.pdf",
+    "filename": "03_proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof_2602.02377v1.pdf",
+    "score": 13,
+    "published": "2026-02-02T17:42:53Z"
+  },
+  {
+    "rank": 4,
+    "category": "LLM Benchmarks",
+    "title": "Hallucination or Creativity: How to Evaluate AI-Generated Scientific Stories?",
+    "year": "2026",
+    "authors": [
+      "Alex Argese",
+      "Pasquale Lisena",
+      "Raphaël Troncy"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02290v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02290v1.pdf",
+    "filename": "04_hallucination-or-creativity-how-to-evaluate-ai-generated-scientific-stories_2602.02290v1.pdf",
+    "score": 12,
+    "published": "2026-02-02T16:29:32Z"
+  },
+  {
+    "rank": 5,
+    "category": "LLM Benchmarks",
+    "title": "OmniCode: A Benchmark for Evaluating Software Engineering Agents",
+    "year": "2026",
+    "authors": [
+      "Atharv Sonwane",
+      "Eng-Shen Tu",
+      "Wei-Chung Lu",
+      "Claas Beger",
+      "Carter Larsen",
+      "Debjit Dhar",
+      "Rachel Chen",
+      "Ronit Pattanayak",
+      "Tuan Anh Dang",
+      "Guohao Chen"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02262v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02262v1.pdf",
+    "filename": "05_omnicode-a-benchmark-for-evaluating-software-engineering-agents_2602.02262v1.pdf",
+    "score": 20,
+    "published": "2026-02-02T16:04:10Z"
+  },
+  {
+    "rank": 6,
+    "category": "LLM Benchmarks",
+    "title": "Towards AI Evaluation in Domain-Specific RAG Systems: The AgriHubi Case Study",
+    "year": "2026",
+    "authors": [
+      "Md. Toufique Hasan",
+      "Ayman Asad Khan",
+      "Mika Saari",
+      "Vaishnavi Bankhele",
+      "Pekka Abrahamsson"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02208v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02208v1.pdf",
+    "filename": "06_towards-ai-evaluation-in-domain-specific-rag-systems-the-agrihubi-case-study_2602.02208v1.pdf",
+    "score": 17,
+    "published": "2026-02-02T15:15:24Z"
+  },
+  {
+    "rank": 7,
+    "category": "LLM Benchmarks",
+    "title": "TIDE: Trajectory-based Diagnostic Evaluation of Test-Time Improvement in LLM Agents",
+    "year": "2026",
+    "authors": [
+      "Hang Yan",
+      "Xinyu Che",
+      "Fangzhi Xu",
+      "Qiushi Sun",
+      "Zichen Ding",
+      "Kanzhi Cheng",
+      "Jian Zhang",
+      "Tao Qin",
+      "Jun Liu",
+      "Qika Lin"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02196v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02196v1.pdf",
+    "filename": "07_tide-trajectory-based-diagnostic-evaluation-of-test-time-improvement-in-llm-agents_2602.02196v1.pdf",
+    "score": 17,
+    "published": "2026-02-02T15:00:47Z"
+  },
+  {
+    "rank": 8,
+    "category": "LLM Benchmarks",
+    "title": "Reasoning in a Combinatorial and Constrained World: Benchmarking LLMs on Natural-Language Combinatorial Optimization",
+    "year": "2026",
+    "authors": [
+      "Xia Jiang",
+      "Jing Chen",
+      "Cong Zhang",
+      "Jie Gao",
+      "Chengpeng Hu",
+      "Chenhao Zhang",
+      "Yaoxin Wu",
+      "Yingqian Zhang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02188v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02188v1.pdf",
+    "filename": "08_reasoning-in-a-combinatorial-and-constrained-world-benchmarking-llms-on-natural-language-combinatorial-optimization_2602.02188v1.pdf",
+    "score": 15,
+    "published": "2026-02-02T14:55:48Z"
+  },
+  {
+    "rank": 9,
+    "category": "LLM Benchmarks",
+    "title": "Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models",
+    "year": "2026",
+    "authors": [
+      "Yu Zeng",
+      "Wenxuan Huang",
+      "Zhen Fang",
+      "Shuang Chen",
+      "Yufan Shen",
+      "Yishuo Cai",
+      "Xiaoman Wang",
+      "Zhenfei Yin",
+      "Lin Chen",
+      "Zehui Chen"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02185v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02185v1.pdf",
+    "filename": "09_vision-deepresearch-benchmark-rethinking-visual-and-textual-search-for-multimodal-large-language-models_2602.02185v1.pdf",
+    "score": 15,
+    "published": "2026-02-02T14:53:11Z"
+  },
+  {
+    "rank": 10,
+    "category": "LLM Benchmarks",
+    "title": "Evaluating Metalinguistic Knowledge in Large Language Models across the World's Languages",
+    "year": "2026",
+    "authors": [
+      "Tjaša Arčon",
+      "Matej Klemen",
+      "Marko Robnik-Šikonja",
+      "Kaja Dobrovoljc"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02182v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02182v1.pdf",
+    "filename": "10_evaluating-metalinguistic-knowledge-in-large-language-models-across-the-world-s-languages_2602.02182v1.pdf",
+    "score": 15,
+    "published": "2026-02-02T14:49:56Z"
+  },
+  {
+    "rank": 11,
+    "category": "LLM Benchmarks",
+    "title": "WildGraphBench: Benchmarking GraphRAG with Wild-Source Corpora",
+    "year": "2026",
+    "authors": [
+      "Pengyu Wang",
+      "Benfeng Xu",
+      "Licheng Zhang",
+      "Shaohan Wang",
+      "Mingxuan Du",
+      "Chiwei Zhu",
+      "Zhendong Mao"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02053v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02053v1.pdf",
+    "filename": "11_wildgraphbench-benchmarking-graphrag-with-wild-source-corpora_2602.02053v1.pdf",
+    "score": 14,
+    "published": "2026-02-02T12:55:29Z"
+  },
+  {
+    "rank": 12,
+    "category": "LLM Benchmarks",
+    "title": "Hunt Instead of Wait: Evaluating Deep Data Research on Large Language Models",
+    "year": "2026",
+    "authors": [
+      "Wei Liu",
+      "Peijie Yu",
+      "Michele Orini",
+      "Yali Du",
+      "Yulan He"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02039v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02039v1.pdf",
+    "filename": "12_hunt-instead-of-wait-evaluating-deep-data-research-on-large-language-models_2602.02039v1.pdf",
+    "score": 15,
+    "published": "2026-02-02T12:36:57Z"
+  },
+  {
+    "rank": 13,
+    "category": "LLM Benchmarks",
+    "title": "Beyond RAG for Agent Memory: Retrieval by Decoupling and Aggregation",
+    "year": "2026",
+    "authors": [
+      "Zhanghao Hu",
+      "Qinglin Zhu",
+      "Hanqi Yan",
+      "Yulan He",
+      "Lin Gui"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.02007v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.02007v1.pdf",
+    "filename": "13_beyond-rag-for-agent-memory-retrieval-by-decoupling-and-aggregation_2602.02007v1.pdf",
+    "score": 12,
+    "published": "2026-02-02T12:04:58Z"
+  },
+  {
+    "rank": 14,
+    "category": "LLM Benchmarks",
+    "title": "Beyond Local Edits: Embedding-Virtualized Knowledge for Broader Evaluation and Preservation of Model Editing",
+    "year": "2026",
+    "authors": [
+      "Shuainan Liu",
+      "Xuanang Chen",
+      "Ben He",
+      "Le Sun"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01977v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01977v1.pdf",
+    "filename": "14_beyond-local-edits-embedding-virtualized-knowledge-for-broader-evaluation-and-preservation-of-model-editing_2602.01977v1.pdf",
+    "score": 19,
+    "published": "2026-02-02T11:33:25Z"
+  },
+  {
+    "rank": 15,
+    "category": "LLM Benchmarks",
+    "title": "Breaking the Static Graph: Context-Aware Traversal for Robust Retrieval-Augmented Generation",
+    "year": "2026",
+    "authors": [
+      "Kwun Hang Lau",
+      "Fangyuan Zhang",
+      "Boyu Ruan",
+      "Yingli Zhou",
+      "Qintian Guo",
+      "Ruiyuan Zhang",
+      "Xiaofang Zhou"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01965v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01965v1.pdf",
+    "filename": "15_breaking-the-static-graph-context-aware-traversal-for-robust-retrieval-augmented-generation_2602.01965v1.pdf",
+    "score": 14,
+    "published": "2026-02-02T11:13:38Z"
+  },
+  {
+    "rank": 16,
+    "category": "LLM Benchmarks",
+    "title": "GuideWeb: A Benchmark for Automatic In-App Guide Generation on Real-World Web UIs",
+    "year": "2026",
+    "authors": [
+      "Chengguang Gan",
+      "Yoshihiro Tsujii",
+      "Yunhao Liang",
+      "Tatsunori Mori",
+      "Shiwen Ni",
+      "Hiroki Itoh"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01917v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01917v1.pdf",
+    "filename": "16_guideweb-a-benchmark-for-automatic-in-app-guide-generation-on-real-world-web-uis_2602.01917v1.pdf",
+    "score": 14,
+    "published": "2026-02-02T10:21:03Z"
+  },
+  {
+    "rank": 17,
+    "category": "LLM Benchmarks",
+    "title": "ES-MemEval: Benchmarking Conversational Agents on Personalized Long-Term Emotional Support",
+    "year": "2026",
+    "authors": [
+      "Tiantian Chen",
+      "Jiaqi Lu",
+      "Ying Shen",
+      "Lin Zhang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01885v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01885v1.pdf",
+    "filename": "17_es-memeval-benchmarking-conversational-agents-on-personalized-long-term-emotional-support_2602.01885v1.pdf",
+    "score": 18,
+    "published": "2026-02-02T09:58:26Z"
+  },
+  {
+    "rank": 18,
+    "category": "LLM Benchmarks",
+    "title": "SOPRAG: Multi-view Graph Experts Retrieval for Industrial Standard Operating Procedures",
+    "year": "2026",
+    "authors": [
+      "Liangtao Lin",
+      "Zhaomeng Zhu",
+      "Tianwei Zhang",
+      "Yonggang Wen"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01858v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01858v1.pdf",
+    "filename": "18_soprag-multi-view-graph-experts-retrieval-for-industrial-standard-operating-procedures_2602.01858v1.pdf",
+    "score": 13,
+    "published": "2026-02-02T09:30:43Z"
+  },
+  {
+    "rank": 19,
+    "category": "Prompt Strategies",
+    "title": "RedVisor: Reasoning-Aware Prompt Injection Defense via Zero-Copy KV Cache Reuse",
+    "year": "2026",
+    "authors": [
+      "Mingrui Liu",
+      "Sixiao Zhang",
+      "Cheng Long",
+      "Kwok-Yan Lam"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01795v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01795v1.pdf",
+    "filename": "19_redvisor-reasoning-aware-prompt-injection-defense-via-zero-copy-kv-cache-reuse_2602.01795v1.pdf",
+    "score": 12,
+    "published": "2026-02-02T08:26:51Z"
+  },
+  {
+    "rank": 20,
+    "category": "LLM Benchmarks",
+    "title": "LingLanMiDian: Systematic Evaluation of LLMs on TCM Knowledge and Clinical Reasoning",
+    "year": "2026",
+    "authors": [
+      "Rui Hua",
+      "Yu Wei",
+      "Zixin Shu",
+      "Kai Chang",
+      "Dengying Yan",
+      "Jianan Xia",
+      "Zeyu Liu",
+      "Hui Zhu",
+      "Shujie Song",
+      "Mingzhong Xiao"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01779v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01779v1.pdf",
+    "filename": "20_linglanmidian-systematic-evaluation-of-llms-on-tcm-knowledge-and-clinical-reasoning_2602.01779v1.pdf",
+    "score": 19,
+    "published": "2026-02-02T08:02:25Z"
+  },
+  {
+    "rank": 21,
+    "category": "LLM Benchmarks",
+    "title": "MedAraBench: Large-Scale Arabic Medical Question Answering Dataset and Benchmark",
+    "year": "2026",
+    "authors": [
+      "Mouath Abu-Daoud",
+      "Leen Kharouf",
+      "Omar El Hajj",
+      "Dana El Samad",
+      "Mariam Al-Omari",
+      "Jihad Mallat",
+      "Khaled Saleh",
+      "Nizar Habash",
+      "Farah E. Shamout"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01714v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01714v1.pdf",
+    "filename": "21_medarabench-large-scale-arabic-medical-question-answering-dataset-and-benchmark_2602.01714v1.pdf",
+    "score": 15,
+    "published": "2026-02-02T06:52:20Z"
+  },
+  {
+    "rank": 22,
+    "category": "LLM Benchmarks",
+    "title": "TRIP-Bench: A Benchmark for Long-Horizon Interactive Agents in Real-World Scenarios",
+    "year": "2026",
+    "authors": [
+      "Yuanzhe Shen",
+      "Zisu Huang",
+      "Zhengyuan Wang",
+      "Muzhao Tian",
+      "Zhengkang Guo",
+      "Chenyang Zhang",
+      "Shuaiyu Zhou",
+      "Zengjie Hu",
+      "Dailin Li",
+      "Jingwen Xu"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01675v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01675v1.pdf",
+    "filename": "22_trip-bench-a-benchmark-for-long-horizon-interactive-agents-in-real-world-scenarios_2602.01675v1.pdf",
+    "score": 15,
+    "published": "2026-02-02T05:43:08Z"
+  },
+  {
+    "rank": 23,
+    "category": "LLM Benchmarks",
+    "title": "ProjDevBench: Benchmarking AI Coding Agents on End-to-End Project Development",
+    "year": "2026",
+    "authors": [
+      "Pengrui Lu",
+      "Shiqi Zhang",
+      "Yunzhong Hou",
+      "Lyumanshan Ye",
+      "Chaoyi Huang",
+      "Zixi Chen",
+      "Ji Zeng",
+      "Hantao Jiang",
+      "Pengfei Liu",
+      "Yiwei Wang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01655v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01655v1.pdf",
+    "filename": "23_projdevbench-benchmarking-ai-coding-agents-on-end-to-end-project-development_2602.01655v1.pdf",
+    "score": 14,
+    "published": "2026-02-02T05:17:23Z"
+  },
+  {
+    "rank": 24,
+    "category": "LLM Benchmarks",
+    "title": "A2Eval: Agentic and Automated Evaluation for Embodied Brain",
+    "year": "2026",
+    "authors": [
+      "Shuai Zhang",
+      "Jiayu Hu",
+      "Zijie Chen",
+      "Zeyuan Ding",
+      "Yi Zhang",
+      "Yingji Zhang",
+      "Ziyi Zhou",
+      "Junwei Liao",
+      "Shengjie Zhou",
+      "Yong Dai"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01640v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01640v1.pdf",
+    "filename": "24_a2eval-agentic-and-automated-evaluation-for-embodied-brain_2602.01640v1.pdf",
+    "score": 19,
+    "published": "2026-02-02T04:55:27Z"
+  },
+  {
+    "rank": 25,
+    "category": "Prompt Strategies",
+    "title": "ToPT: Task-Oriented Prompt Tuning for Urban Region Representation Learning",
+    "year": "2026",
+    "authors": [
+      "Zitao Guo",
+      "Changyang Jiang",
+      "Tianhong Zhao",
+      "Jinzhou Cao",
+      "Genan Dai",
+      "Bowen Zhang"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01610v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01610v1.pdf",
+    "filename": "25_topt-task-oriented-prompt-tuning-for-urban-region-representation-learning_2602.01610v1.pdf",
+    "score": 15,
+    "published": "2026-02-02T03:56:05Z"
+  },
+  {
+    "rank": 26,
+    "category": "LLM Benchmarks",
+    "title": "Expected Harm: Rethinking Safety Evaluation of (Mis)Aligned LLMs",
+    "year": "2026",
+    "authors": [
+      "Yen-Shan Chen",
+      "Zhi Rui Tam",
+      "Cheng-Kuang Wu",
+      "Yun-Nung Chen"
+    ],
+    "source": "arXiv",
+    "arxiv_id": "2602.01600v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01600v1.pdf",
+    "filename": "26_expected-harm-rethinking-safety-evaluation-of-mis-aligned-llms_2602.01600v1.pdf",
+    "score": 17,
+    "published": "2026-02-02T03:48:04Z"
+  }
+]

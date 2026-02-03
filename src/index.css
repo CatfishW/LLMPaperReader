@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #0f1b1b;
+  background-color: #f7f5f0;
+  --bg: #f7f5f0;
+  --paper: #ffffff;
+  --panel: #eef6f5;
+  --card: #fbfbf8;
+  --ink: #0f1b1b;
+  --muted: #506060;
+  --border: rgba(15, 27, 27, 0.12);
+  --accent: #0f766e;
+  --accent-strong: #0b5f58;
+  --accent-glow: #44d7c7;
+  --field: rgba(255, 255, 255, 0.9);
+  --shadow: 0 28px 64px rgba(10, 20, 25, 0.12);
+  --glass: rgba(255, 255, 255, 0.75);
+  --ring: rgba(15, 118, 110, 0.25);
+  --backdrop: rgba(12, 16, 20, 0.55);
+}
+
+:root[data-theme='dark'] {
+  color: #e8f1f2;
+  background-color: #0b1013;
+  --bg: #0b1013;
+  --paper: #121a21;
+  --panel: #0f171d;
+  --card: #111821;
+  --ink: #e8f1f2;
+  --muted: #9aa7af;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #39d6c2;
+  --accent-strong: #1bb5a3;
+  --accent-glow: #5ef1de;
+  --field: rgba(12, 18, 24, 0.8);
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  --glass: rgba(18, 26, 33, 0.78);
+  --ring: rgba(57, 214, 194, 0.3);
+  --backdrop: rgba(10, 14, 18, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color: #e8f1f2;
+    background-color: #0b1013;
+    --bg: #0b1013;
+    --paper: #121a21;
+    --panel: #0f171d;
+    --card: #111821;
+    --ink: #e8f1f2;
+    --muted: #9aa7af;
+    --border: rgba(255, 255, 255, 0.08);
+    --accent: #39d6c2;
+    --accent-strong: #1bb5a3;
+    --accent-glow: #5ef1de;
+    --field: rgba(12, 18, 24, 0.8);
+    --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    --glass: rgba(18, 26, 33, 0.78);
+    --ring: rgba(57, 214, 194, 0.3);
+    --backdrop: rgba(10, 14, 18, 0.7);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--ink);
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+}
+
+body::before {
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(68, 215, 199, 0.25), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(244, 211, 94, 0.12), transparent 45%),
+    url('./assets/patterns/circuit-board.svg');
+  background-size: 650px 650px, 800px 800px, 900px 900px;
+  background-position: 0 0, 200px 40px, 0 0;
+  opacity: 0.6;
+  animation: drift 48s linear infinite;
+}
+
+body::after {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(68, 215, 199, 0.18), transparent 55%),
+    radial-gradient(circle at 90% 70%, rgba(20, 28, 36, 0.18), transparent 60%),
+    url('./assets/patterns/bubbles.svg');
+  background-size: 700px 700px, 900px 900px, 600px 600px;
+  background-position: 0 0, 100px 160px, 140px 0;
+  opacity: 0.55;
+  mix-blend-mode: normal;
+  animation: float 60s linear infinite;
+}
+
+@keyframes drift {
+  0% {
+    background-position: 0 0, 200px 40px, 0 0;
+  }
+  50% {
+    background-position: 140px 80px, 120px 180px, 200px 120px;
+  }
+  100% {
+    background-position: 0 0, 200px 40px, 0 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    background-position: 0 0, 100px 160px, 140px 0;
+  }
+  50% {
+    background-position: 160px 120px, 40px 240px, 0 120px;
+  }
+  100% {
+    background-position: 0 0, 100px 160px, 140px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+input,
+select {
+  background-color: var(--field);
+}
+
+#root {
+  min-height: 100vh;
+}
