@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "cfafd278-d826-4975-a10b-2098d205f694",
+    "title": "26 expected-harm-rethinking-safety-evaluation-of-mis-aligned-llms 2602.01600v1",
+    "originalFilename": "26_expected-harm-rethinking-safety-evaluation-of-mis-aligned-llms_2602.01600v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.646Z",
+    "sizeBytes": 1068392
+  },
+  {
+    "id": "26a18661-9497-4a8f-99e4-f7bc11830ff8",
+    "title": "25 topt-task-oriented-prompt-tuning-for-urban-region-representation-learning 2602.01610v1",
+    "originalFilename": "25_topt-task-oriented-prompt-tuning-for-urban-region-representation-learning_2602.01610v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.644Z",
+    "sizeBytes": 620635
+  },
+  {
+    "id": "2e36a43c-7c21-45d0-a6f1-8837f13334ca",
+    "title": "24 a2eval-agentic-and-automated-evaluation-for-embodied-brain 2602.01640v1",
+    "originalFilename": "24_a2eval-agentic-and-automated-evaluation-for-embodied-brain_2602.01640v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.642Z",
+    "sizeBytes": 1915357
+  },
+  {
+    "id": "9205443b-0cae-4e5d-b7a2-99e3f55bb56d",
+    "title": "23 projdevbench-benchmarking-ai-coding-agents-on-end-to-end-project-development 2602.01655v1",
+    "originalFilename": "23_projdevbench-benchmarking-ai-coding-agents-on-end-to-end-project-development_2602.01655v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.639Z",
+    "sizeBytes": 1310748
+  },
+  {
+    "id": "b2f0d144-4c40-403e-81f0-6eaa38b5bc33",
+    "title": "22 trip-bench-a-benchmark-for-long-horizon-interactive-agents-in-real-world-scenarios 2602.01675v1",
+    "originalFilename": "22_trip-bench-a-benchmark-for-long-horizon-interactive-agents-in-real-world-scenarios_2602.01675v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.636Z",
+    "sizeBytes": 2028097
+  },
+  {
+    "id": "5386a0d1-efa9-436f-81cd-cfd38504cfb2",
+    "title": "21 medarabench-large-scale-arabic-medical-question-answering-dataset-and-benchmark 2602.01714v1",
+    "originalFilename": "21_medarabench-large-scale-arabic-medical-question-answering-dataset-and-benchmark_2602.01714v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.633Z",
+    "sizeBytes": 2095741
+  },
+  {
+    "id": "cd3947cf-cdbb-4b6e-97bc-4fc9afcd801c",
+    "title": "20 linglanmidian-systematic-evaluation-of-llms-on-tcm-knowledge-and-clinical-reasoning 2602.01779v1",
+    "originalFilename": "20_linglanmidian-systematic-evaluation-of-llms-on-tcm-knowledge-and-clinical-reasoning_2602.01779v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.630Z",
+    "sizeBytes": 3538091
+  },
+  {
+    "id": "5904a557-432c-4a08-bc2b-235de65ff951",
+    "title": "19 redvisor-reasoning-aware-prompt-injection-defense-via-zero-copy-kv-cache-reuse 2602.01795v1",
+    "originalFilename": "19_redvisor-reasoning-aware-prompt-injection-defense-via-zero-copy-kv-cache-reuse_2602.01795v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.624Z",
+    "sizeBytes": 693594
+  },
+  {
+    "id": "edf711d1-0681-42de-bf02-1bcfbafa21e3",
+    "title": "18 soprag-multi-view-graph-experts-retrieval-for-industrial-standard-operating-procedures 2602.01858v1",
+    "originalFilename": "18_soprag-multi-view-graph-experts-retrieval-for-industrial-standard-operating-procedures_2602.01858v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.622Z",
+    "sizeBytes": 1235026
+  },
+  {
+    "id": "b755a3ab-7492-4565-823d-67570c42f5f8",
+    "title": "17 es-memeval-benchmarking-conversational-agents-on-personalized-long-term-emotional-support 2602.01885v1",
+    "originalFilename": "17_es-memeval-benchmarking-conversational-agents-on-personalized-long-term-emotional-support_2602.01885v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.619Z",
+    "sizeBytes": 1268463
+  },
+  {
+    "id": "111d91c1-6bdb-4812-acb4-25187ce7c0cd",
+    "title": "16 guideweb-a-benchmark-for-automatic-in-app-guide-generation-on-real-world-web-uis 2602.01917v1",
+    "originalFilename": "16_guideweb-a-benchmark-for-automatic-in-app-guide-generation-on-real-world-web-uis_2602.01917v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.616Z",
+    "sizeBytes": 7384167
+  },
+  {
+    "id": "d2187467-e5f0-458d-a935-94d40edca369",
+    "title": "15 breaking-the-static-graph-context-aware-traversal-for-robust-retrieval-augmented-generation 2602.01965v1",
+    "originalFilename": "15_breaking-the-static-graph-context-aware-traversal-for-robust-retrieval-augmented-generation_2602.01965v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.606Z",
+    "sizeBytes": 670229
+  },
+  {
+    "id": "960dd400-ac9d-4c64-83e8-d7033ecc7a77",
+    "title": "14 beyond-local-edits-embedding-virtualized-knowledge-for-broader-evaluation-and-preservation-of-model-editing 2602.01977v1",
+    "originalFilename": "14_beyond-local-edits-embedding-virtualized-knowledge-for-broader-evaluation-and-preservation-of-model-editing_2602.01977v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.604Z",
+    "sizeBytes": 2617071
+  },
+  {
+    "id": "5cff1d04-7437-4db0-9c01-97327d9fc97d",
+    "title": "13 beyond-rag-for-agent-memory-retrieval-by-decoupling-and-aggregation 2602.02007v1",
+    "originalFilename": "13_beyond-rag-for-agent-memory-retrieval-by-decoupling-and-aggregation_2602.02007v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.599Z",
+    "sizeBytes": 2051329
+  },
+  {
+    "id": "d065388a-d7b6-4e57-a991-cce329c9aa68",
+    "title": "12 hunt-instead-of-wait-evaluating-deep-data-research-on-large-language-models 2602.02039v1",
+    "originalFilename": "12_hunt-instead-of-wait-evaluating-deep-data-research-on-large-language-models_2602.02039v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.596Z",
+    "sizeBytes": 3703972
+  },
+  {
+    "id": "4ed159cf-5d54-4bf7-8faa-b926950e1765",
+    "title": "11 wildgraphbench-benchmarking-graphrag-with-wild-source-corpora 2602.02053v1",
+    "originalFilename": "11_wildgraphbench-benchmarking-graphrag-with-wild-source-corpora_2602.02053v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.588Z",
+    "sizeBytes": 4078271
+  },
+  {
+    "id": "11374ba3-828a-4520-9155-303f6fa94c63",
+    "title": "10 evaluating-metalinguistic-knowledge-in-large-language-models-across-the-world-s-languages 2602.02182v1",
+    "originalFilename": "10_evaluating-metalinguistic-knowledge-in-large-language-models-across-the-world-s-languages_2602.02182v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.583Z",
+    "sizeBytes": 1131504
+  },
+  {
+    "id": "595f6c4e-2098-4301-b1d8-7faaa0e7aa24",
+    "title": "09 vision-deepresearch-benchmark-rethinking-visual-and-textual-search-for-multimodal-large-language-models 2602.02185v1",
+    "originalFilename": "09_vision-deepresearch-benchmark-rethinking-visual-and-textual-search-for-multimodal-large-language-models_2602.02185v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.580Z",
+    "sizeBytes": 5559977
+  },
+  {
+    "id": "d1053df4-d9b3-4eba-8a1e-aac5f4228a98",
+    "title": "08 reasoning-in-a-combinatorial-and-constrained-world-benchmarking-llms-on-natural-language-combinatorial-optimization 2602.02188v1",
+    "originalFilename": "08_reasoning-in-a-combinatorial-and-constrained-world-benchmarking-llms-on-natural-language-combinatorial-optimization_2602.02188v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.573Z",
+    "sizeBytes": 2629081
+  },
+  {
+    "id": "7a6071d0-332c-4bdd-a647-e3e86e4e9f50",
+    "title": "07 tide-trajectory-based-diagnostic-evaluation-of-test-time-improvement-in-llm-agents 2602.02196v1",
+    "originalFilename": "07_tide-trajectory-based-diagnostic-evaluation-of-test-time-improvement-in-llm-agents_2602.02196v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.569Z",
+    "sizeBytes": 2645138
+  },
+  {
+    "id": "3e2baad8-6d9e-4a7c-a20a-272377c0ef83",
+    "title": "06 towards-ai-evaluation-in-domain-specific-rag-systems-the-agrihubi-case-study 2602.02208v1",
+    "originalFilename": "06_towards-ai-evaluation-in-domain-specific-rag-systems-the-agrihubi-case-study_2602.02208v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.564Z",
+    "sizeBytes": 1168220
+  },
+  {
+    "id": "61b81b56-e677-4d30-abf3-d5d6128a8f99",
+    "title": "05 omnicode-a-benchmark-for-evaluating-software-engineering-agents 2602.02262v1",
+    "originalFilename": "05_omnicode-a-benchmark-for-evaluating-software-engineering-agents_2602.02262v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.560Z",
+    "sizeBytes": 4188496
+  },
+  {
+    "id": "b4ba0c26-1506-4fc0-be9d-ded78072e0dc",
+    "title": "04 hallucination-or-creativity-how-to-evaluate-ai-generated-scientific-stories 2602.02290v1",
+    "originalFilename": "04_hallucination-or-creativity-how-to-evaluate-ai-generated-scientific-stories_2602.02290v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.554Z",
+    "sizeBytes": 838608
+  },
+  {
+    "id": "68cd363a-3302-4ad1-8626-ce3ad3cfa0a3",
+    "title": "03 proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof 2602.02377v1",
+    "originalFilename": "03_proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof_2602.02377v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.551Z",
+    "sizeBytes": 4607940
+  },
+  {
+    "id": "f3bffb13-e47a-4c86-8506-3fea6f0cbe5e",
+    "title": "02 rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs 2602.02382v1",
+    "originalFilename": "02_rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs_2602.02382v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.546Z",
+    "sizeBytes": 1133806
+  },
+  {
+    "id": "0c8ce6f6-0a86-445a-9cba-52cc609712f7",
+    "title": "01 large-language-models-for-mental-health-a-multilingual-evaluation 2602.02440v1",
+    "originalFilename": "01_large-language-models-for-mental-health-a-multilingual-evaluation_2602.02440v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.543Z",
+    "sizeBytes": 275210
+  },
+  {
+    "id": "d8d6ae8e-c944-4af2-8e60-66a1ca7a72c7",
+    "title": "50 promptattack-probing-dialogue-state-trackers-with-adversarial-prompts 2306.04535v1",
+    "originalFilename": "50_promptattack-probing-dialogue-state-trackers-with-adversarial-prompts_2306.04535v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.540Z",
+    "sizeBytes": 653611
+  },
+  {
+    "id": "d3634321-8731-49b3-af8c-6645c9405eb9",
+    "title": "49 skeleton-of-thought-prompting-llms-for-efficient-parallel-generation 2307.15337v3",
+    "originalFilename": "49_skeleton-of-thought-prompting-llms-for-efficient-parallel-generation_2307.15337v3.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.538Z",
+    "sizeBytes": 1731640
+  },
+  {
+    "id": "43ffebee-6872-4be4-b382-647388ad3251",
+    "title": "48 agentbench-evaluating-llms-as-agents 2308.03688v3",
+    "originalFilename": "48_agentbench-evaluating-llms-as-agents_2308.03688v3.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.535Z",
+    "sizeBytes": 23017024
+  },
+  {
+    "id": "17ed17b7-5969-4cdb-b229-1d284f24ba56",
+    "title": "47 graph-of-thoughts-solving-elaborate-problems-with-large-language-models 2308.09687v4",
+    "originalFilename": "47_graph-of-thoughts-solving-elaborate-problems-with-large-language-models_2308.09687v4.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.513Z",
+    "sizeBytes": 3128193
+  },
+  {
+    "id": "2088eec4-4888-400e-ae4b-2b2a26ba4901",
+    "title": "46 dspy-compiling-declarative-language-model-calls-into-self-improving-pipelines 2310.03714v1",
+    "originalFilename": "46_dspy-compiling-declarative-language-model-calls-into-self-improving-pipelines_2310.03714v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.508Z",
+    "sizeBytes": 460814
+  },
+  {
+    "id": "7f00288b-1b03-49e9-9791-5195cc9d8043",
+    "title": "45 take-a-step-back-evoking-reasoning-via-abstraction-in-large-language-models 2310.06117v2",
+    "originalFilename": "45_take-a-step-back-evoking-reasoning-via-abstraction-in-large-language-models_2310.06117v2.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.506Z",
+    "sizeBytes": 977271
+  },
+  {
+    "id": "a81d88a1-cc83-465c-af7d-a547cd113693",
+    "title": "44 swe-bench-can-language-models-resolve-real-world-github-issues 2310.06770v3",
+    "originalFilename": "44_swe-bench-can-language-models-resolve-real-world-github-issues_2310.06770v3.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.504Z",
+    "sizeBytes": 4533722
+  },
+  {
+    "id": "9068ea29-b271-4aef-8655-b165e588a998",
+    "title": "43 gpqa-a-graduate-level-google-proof-q-a-benchmark 2311.12022v1",
+    "originalFilename": "43_gpqa-a-graduate-level-google-proof-q-a-benchmark_2311.12022v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.499Z",
+    "sizeBytes": 617128
+  },
+  {
+    "id": "e517f498-c017-4fb7-92c1-c56820697dda",
+    "title": "42 mmmu-a-massive-multi-discipline-multimodal-understanding-and-reasoning-benchmark-for-expert-agi 2311.16502v4",
+    "originalFilename": "42_mmmu-a-massive-multi-discipline-multimodal-understanding-and-reasoning-benchmark-for-expert-agi_2311.16502v4.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.496Z",
+    "sizeBytes": 16874947
+  },
+  {
+    "id": "40689e71-81cd-422d-93e4-a567373ea61b",
+    "title": "41 chatbot-arena-an-open-platform-for-evaluating-llms-by-human-preference 2403.04132v1",
+    "originalFilename": "41_chatbot-arena-an-open-platform-for-evaluating-llms-by-human-preference_2403.04132v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.482Z",
+    "sizeBytes": 1081950
+  },
+  {
+    "id": "73de552d-c9f4-4ded-8b67-9986ff7c7cf7",
+    "title": "40 from-crowdsourced-data-to-high-quality-benchmarks-arena-hard-and-benchbuilder-pipeline 2406.11939v2",
+    "originalFilename": "40_from-crowdsourced-data-to-high-quality-benchmarks-arena-hard-and-benchbuilder-pipeline_2406.11939v2.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.479Z",
+    "sizeBytes": 590222
+  },
+  {
+    "id": "65897937-a4e7-4969-941b-6e14b264176b",
+    "title": "39 swe-bench-multimodal-do-ai-systems-generalize-to-visual-software-domains 2410.03859v1",
+    "originalFilename": "39_swe-bench-multimodal-do-ai-systems-generalize-to-visual-software-domains_2410.03859v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.477Z",
+    "sizeBytes": 4379827
+  },
+  {
+    "id": "8682be4b-5d5c-435b-a63b-32d3cf2e366d",
+    "title": "38 adept-adaptive-decomposed-prompt-tuning-for-parameter-efficient-fine-tuning 2501.03291v3",
+    "originalFilename": "38_adept-adaptive-decomposed-prompt-tuning-for-parameter-efficient-fine-tuning_2501.03291v3.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.473Z",
+    "sizeBytes": 963723
+  },
+  {
+    "id": "5ed8f37b-47fd-4473-b173-cc20dc411269",
+    "title": "37 villa-mmbench-a-unified-benchmark-suite-for-llm-augmented-multimodal-movie-recommendation 2508.04206v1",
+    "originalFilename": "37_villa-mmbench-a-unified-benchmark-suite-for-llm-augmented-multimodal-movie-recommendation_2508.04206v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.470Z",
+    "sizeBytes": 1530894
+  },
+  {
+    "id": "d1e87e59-bd60-44de-b0dc-b602e6e301e4",
+    "title": "36 gsm8k-v-can-vision-language-models-solve-grade-school-math-word-problems-in-visual-contexts 2509.25160v1",
+    "originalFilename": "36_gsm8k-v-can-vision-language-models-solve-grade-school-math-word-problems-in-visual-contexts_2509.25160v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.467Z",
+    "sizeBytes": 17292066
+  },
+  {
+    "id": "281a9888-21bc-458e-891a-b76d731c62fc",
+    "title": "35 rlaif-spa-optimizing-llm-based-emotional-speech-synthesis-via-rlaif 2510.14628v1",
+    "originalFilename": "35_rlaif-spa-optimizing-llm-based-emotional-speech-synthesis-via-rlaif_2510.14628v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.453Z",
+    "sizeBytes": 1582776
+  },
+  {
+    "id": "a19c2183-4f06-4c02-9e21-98a49cc9a61d",
+    "title": "34 effectiveness-of-chain-of-thought-in-distilling-reasoning-capability-from-large-language-models 2511.05184v1",
+    "originalFilename": "34_effectiveness-of-chain-of-thought-in-distilling-reasoning-capability-from-large-language-models_2511.05184v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.450Z",
+    "sizeBytes": 531675
+  },
+  {
+    "id": "4be747cf-c6d3-4ca1-bd0e-09021e556719",
+    "title": "33 elpo-ensemble-learning-based-prompt-optimization-for-large-language-models 2511.16122v1",
+    "originalFilename": "33_elpo-ensemble-learning-based-prompt-optimization-for-large-language-models_2511.16122v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.447Z",
+    "sizeBytes": 1020128
+  },
+  {
+    "id": "86863b39-c0cc-42dd-ba0b-bc6b3007a9f5",
+    "title": "32 automatic-prompt-engineering-with-no-task-cues-and-no-tuning 2601.03130v1",
+    "originalFilename": "32_automatic-prompt-engineering-with-no-task-cues-and-no-tuning_2601.03130v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.444Z",
+    "sizeBytes": 223618
+  },
+  {
+    "id": "de658c91-8ca4-44fd-927f-8331ab5b58b8",
+    "title": "31 geosteer-faithful-chain-of-thought-steering-via-latent-manifold-gradients 2601.10229v2",
+    "originalFilename": "31_geosteer-faithful-chain-of-thought-steering-via-latent-manifold-gradients_2601.10229v2.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.442Z",
+    "sizeBytes": 377541
+  },
+  {
+    "id": "4e237968-6cba-4cc3-9058-322ede9583d3",
+    "title": "30 automatic-prompt-optimization-for-dataset-level-feature-discovery 2601.13922v1",
+    "originalFilename": "30_automatic-prompt-optimization-for-dataset-level-feature-discovery_2601.13922v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.441Z",
+    "sizeBytes": 747754
+  },
+  {
+    "id": "bea61e36-0771-432d-bd15-7631c9ed0da4",
+    "title": "29 rethinking-genomic-modeling-through-optical-character-recognition 2602.02014v1",
+    "originalFilename": "29_rethinking-genomic-modeling-through-optical-character-recognition_2602.02014v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.439Z",
+    "sizeBytes": 9960198
+  },
+  {
+    "id": "5a8c1ef9-86a8-452a-9027-36afc9a68495",
+    "title": "28 hunt-instead-of-wait-evaluating-deep-data-research-on-large-language-models 2602.02039v1",
+    "originalFilename": "28_hunt-instead-of-wait-evaluating-deep-data-research-on-large-language-models_2602.02039v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.431Z",
+    "sizeBytes": 3703972
+  },
+  {
+    "id": "9fdb60e7-b79b-43c0-9567-5d5a0be0f3e1",
+    "title": "27 lec-kg-an-llm-embedding-collaborative-framework-for-domain-specific-knowledge-graph-construction-a-case-study-on-sdgs 2602.02090v1",
+    "originalFilename": "27_lec-kg-an-llm-embedding-collaborative-framework-for-domain-specific-knowledge-graph-construction-a-case-study-on-sdgs_2602.02090v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.426Z",
+    "sizeBytes": 9848769
+  },
+  {
+    "id": "5d79cfdf-d464-4e19-b73c-6a54a74c418e",
+    "title": "26 dicta-lm-3-0-advancing-the-frontier-of-hebrew-sovereign-llms 2602.02104v1",
+    "originalFilename": "26_dicta-lm-3-0-advancing-the-frontier-of-hebrew-sovereign-llms_2602.02104v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.418Z",
+    "sizeBytes": 501881
+  },
+  {
+    "id": "1cc9bb3c-4709-4de2-b9ed-b05979718ada",
+    "title": "25 learning-generative-selection-for-best-of-n 2602.02143v1",
+    "originalFilename": "25_learning-generative-selection-for-best-of-n_2602.02143v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.417Z",
+    "sizeBytes": 512694
+  },
+  {
+    "id": "54dca107-e020-4991-8ae5-e4b33683aadf",
+    "title": "24 evaluating-metalinguistic-knowledge-in-large-language-models-across-the-world-s-languages 2602.02182v1",
+    "originalFilename": "24_evaluating-metalinguistic-knowledge-in-large-language-models-across-the-world-s-languages_2602.02182v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.415Z",
+    "sizeBytes": 1131504
+  },
+  {
+    "id": "a89742f9-089c-4159-9250-f1d949d8fa35",
+    "title": "23 vision-deepresearch-benchmark-rethinking-visual-and-textual-search-for-multimodal-large-language-models 2602.02185v1",
+    "originalFilename": "23_vision-deepresearch-benchmark-rethinking-visual-and-textual-search-for-multimodal-large-language-models_2602.02185v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.412Z",
+    "sizeBytes": 5559977
+  },
+  {
+    "id": "43cdacb5-eb96-47f6-abdd-7d9ddd1fb079",
+    "title": "22 more-than-a-quick-glance-overcoming-the-greedy-bias-in-kv-cache-compression 2602.02199v1",
+    "originalFilename": "22_more-than-a-quick-glance-overcoming-the-greedy-bias-in-kv-cache-compression_2602.02199v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.406Z",
+    "sizeBytes": 460845
+  },
+  {
+    "id": "98b13678-b2ad-4841-b5d4-808c006ab095",
+    "title": "21 towards-ai-evaluation-in-domain-specific-rag-systems-the-agrihubi-case-study 2602.02208v1",
+    "originalFilename": "21_towards-ai-evaluation-in-domain-specific-rag-systems-the-agrihubi-case-study_2602.02208v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.404Z",
+    "sizeBytes": 1168220
+  },
+  {
+    "id": "d9568745-27e7-4d6f-928b-1ee5b10fd2a5",
+    "title": "20 am-i-more-pointwise-or-pairwise-revealing-position-bias-in-rubric-based-llm-as-a-judge 2602.02219v1",
+    "originalFilename": "20_am-i-more-pointwise-or-pairwise-revealing-position-bias-in-rubric-based-llm-as-a-judge_2602.02219v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.401Z",
+    "sizeBytes": 525964
+  },
+  {
+    "id": "4b4453b5-bf63-4c48-bbab-49a4b71532c3",
+    "title": "19 omnicode-a-benchmark-for-evaluating-software-engineering-agents 2602.02262v1",
+    "originalFilename": "19_omnicode-a-benchmark-for-evaluating-software-engineering-agents_2602.02262v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.399Z",
+    "sizeBytes": 4188496
+  },
+  {
+    "id": "d4988add-a18b-4e19-ae8b-917e71b567bb",
+    "title": "18 raca-representation-aware-coverage-criteria-for-llm-safety-testing 2602.02280v1",
+    "originalFilename": "18_raca-representation-aware-coverage-criteria-for-llm-safety-testing_2602.02280v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.393Z",
+    "sizeBytes": 1422201
+  },
+  {
+    "id": "7e2572a8-9389-473e-83c1-7cd365b904bb",
+    "title": "17 cross-lingual-stability-of-llm-judges-under-controlled-generation-evidence-from-finno-ugric-languages 2602.02287v1",
+    "originalFilename": "17_cross-lingual-stability-of-llm-judges-under-controlled-generation-evidence-from-finno-ugric-languages_2602.02287v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.390Z",
+    "sizeBytes": 1363152
+  },
+  {
+    "id": "cbb39e37-e22f-4a73-87a6-0613ff6b9d77",
+    "title": "16 interpreting-and-controlling-llm-reasoning-through-integrated-policy-gradient 2602.02313v1",
+    "originalFilename": "16_interpreting-and-controlling-llm-reasoning-through-integrated-policy-gradient_2602.02313v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.388Z",
+    "sizeBytes": 1459075
+  },
+  {
+    "id": "379188fb-6bb9-4087-beb6-5431b5eb4d33",
+    "title": "15 the-shape-of-beliefs-geometry-dynamics-and-interventions-along-representation-manifolds-of-language-models-posteriors 2602.02315v1",
+    "originalFilename": "15_the-shape-of-beliefs-geometry-dynamics-and-interventions-along-representation-manifolds-of-language-models-posteriors_2602.02315v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.384Z",
+    "sizeBytes": 18332102
+  },
+  {
+    "id": "bc70d541-33a5-4ea4-99c5-6dccf6b9c2ae",
+    "title": "14 a-large-scale-dataset-for-molecular-structure-language-description-via-a-rule-regularized-method 2602.02320v1",
+    "originalFilename": "14_a-large-scale-dataset-for-molecular-structure-language-description-via-a-rule-regularized-method_2602.02320v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.369Z",
+    "sizeBytes": 898645
+  },
+  {
+    "id": "7161ccc7-e6f5-4cb2-87ab-92b477056611",
+    "title": "13 language-steering-for-multilingual-in-context-learning 2602.02326v1",
+    "originalFilename": "13_language-steering-for-multilingual-in-context-learning_2602.02326v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.366Z",
+    "sizeBytes": 1043208
+  },
+  {
+    "id": "3ad12baa-8f8d-4250-9c11-f90843c6f3eb",
+    "title": "12 automated-multiple-mini-interview-mmi-scoring 2602.02360v1",
+    "originalFilename": "12_automated-multiple-mini-interview-mmi-scoring_2602.02360v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.362Z",
+    "sizeBytes": 470606
+  },
+  {
+    "id": "38de4f12-86b0-4abe-bfef-6144c0906a78",
+    "title": "11 proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof 2602.02377v1",
+    "originalFilename": "11_proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof_2602.02377v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.360Z",
+    "sizeBytes": 4607940
+  },
+  {
+    "id": "3244f36b-bd80-48c9-8cd4-5791246e8fe8",
+    "title": "10 from-sycophancy-to-sensemaking-premise-governance-for-human-ai-decision-making 2602.02378v1",
+    "originalFilename": "10_from-sycophancy-to-sensemaking-premise-governance-for-human-ai-decision-making_2602.02378v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.356Z",
+    "sizeBytes": 96410
+  },
+  {
+    "id": "aa407f2a-f66e-4f22-87f5-4113d8022ff8",
+    "title": "09 rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs 2602.02382v1",
+    "originalFilename": "09_rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs_2602.02382v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.354Z",
+    "sizeBytes": 1133806
+  },
+  {
+    "id": "7baf16f6-d896-4eba-8e64-03f6c3ca11ec",
+    "title": "08 misconception-diagnosis-from-student-tutor-dialogue-generate-retrieve-rerank 2602.02414v1",
+    "originalFilename": "08_misconception-diagnosis-from-student-tutor-dialogue-generate-retrieve-rerank_2602.02414v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.351Z",
+    "sizeBytes": 1142491
+  },
+  {
+    "id": "cf16e27b-d021-4320-9d49-19f31315ff0c",
+    "title": "07 large-language-models-for-mental-health-a-multilingual-evaluation 2602.02440v1",
+    "originalFilename": "07_large-language-models-for-mental-health-a-multilingual-evaluation_2602.02440v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.348Z",
+    "sizeBytes": 275210
+  },
+  {
+    "id": "49b76278-edc4-41b8-96f3-2578de05d525",
+    "title": "06 active-causal-experimentalist-ace-learning-intervention-strategies-via-direct-preference-optimization 2602.02451v1",
+    "originalFilename": "06_active-causal-experimentalist-ace-learning-intervention-strategies-via-direct-preference-optimization_2602.02451v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.347Z",
+    "sizeBytes": 384874
+  },
+  {
+    "id": "3994fe09-eb94-4f1f-a6fd-1f7891163ae8",
+    "title": "05 drift-bench-diagnosing-cooperative-breakdowns-in-llm-agents-under-input-faults-via-multi-turn-interaction 2602.02455v1",
+    "originalFilename": "05_drift-bench-diagnosing-cooperative-breakdowns-in-llm-agents-under-input-faults-via-multi-turn-interaction_2602.02455v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.343Z",
+    "sizeBytes": 8694005
+  },
+  {
+    "id": "a51b2f3b-9655-4e3e-9773-27a56fda1f99",
+    "title": "04 indications-of-belief-guided-agency-and-meta-cognitive-monitoring-in-large-language-models 2602.02467v1",
+    "originalFilename": "04_indications-of-belief-guided-agency-and-meta-cognitive-monitoring-in-large-language-models_2602.02467v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.336Z",
+    "sizeBytes": 1043770
+  },
+  {
+    "id": "0f06a727-b820-4300-8588-a420c613e0fa",
+    "title": "03 avenir-web-human-experience-imitating-multimodal-web-agents-with-mixture-of-grounding-experts 2602.02468v1",
+    "originalFilename": "03_avenir-web-human-experience-imitating-multimodal-web-agents-with-mixture-of-grounding-experts_2602.02468v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.332Z",
+    "sizeBytes": 6760309
+  },
+  {
+    "id": "4e5247fe-c471-4ec4-b0b0-ea9e12aff1dc",
+    "title": "02 training-llms-for-divide-and-conquer-reasoning-elevates-test-time-scalability 2602.02477v1",
+    "originalFilename": "02_training-llms-for-divide-and-conquer-reasoning-elevates-test-time-scalability_2602.02477v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.326Z",
+    "sizeBytes": 1513429
+  },
+  {
+    "id": "80502f0b-41ca-4c56-8467-5fa846c2a4fe",
+    "title": "50 autonomous-question-formation-for-large-language-model-driven-ai-systems 2602.01556v1",
+    "originalFilename": "50_autonomous-question-formation-for-large-language-model-driven-ai-systems_2602.01556v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.321Z",
+    "sizeBytes": 456950
+  },
+  {
+    "id": "43d9d1c4-7d0c-4722-a9ae-770983aed179",
+    "title": "49 how-implicit-bias-accumulates-and-propagates-in-llm-long-term-memory 2602.01558v1",
+    "originalFilename": "49_how-implicit-bias-accumulates-and-propagates-in-llm-long-term-memory_2602.01558v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.319Z",
+    "sizeBytes": 1342021
+  },
+  {
+    "id": "341732ad-f78f-4192-9fc4-d70f2674a82a",
+    "title": "48 llm-based-embeddings-attention-values-encode-sentence-semantics-better-than-hidden-states 2602.01572v1",
+    "originalFilename": "48_llm-based-embeddings-attention-values-encode-sentence-semantics-better-than-hidden-states_2602.01572v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.316Z",
+    "sizeBytes": 2237046
+  },
+  {
+    "id": "f5925561-fca2-478d-a134-fd435b9ada38",
+    "title": "47 provable-defense-framework-for-llm-jailbreaks-via-noise-augumented-alignment 2602.01587v1",
+    "originalFilename": "47_provable-defense-framework-for-llm-jailbreaks-via-noise-augumented-alignment_2602.01587v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.311Z",
+    "sizeBytes": 491926
+  },
+  {
+    "id": "af3d25d1-7032-4ba1-b29c-d42645297869",
+    "title": "46 topt-task-oriented-prompt-tuning-for-urban-region-representation-learning 2602.01610v1",
+    "originalFilename": "46_topt-task-oriented-prompt-tuning-for-urban-region-representation-learning_2602.01610v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.310Z",
+    "sizeBytes": 620635
+  },
+  {
+    "id": "6b9f659e-f31d-40ca-8eb1-40dd4c9790f1",
+    "title": "45 omni-judge-can-omni-llms-serve-as-human-aligned-judges-for-text-conditioned-audio-video-generation 2602.01623v1",
+    "originalFilename": "45_omni-judge-can-omni-llms-serve-as-human-aligned-judges-for-text-conditioned-audio-video-generation_2602.01623v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.307Z",
+    "sizeBytes": 34010642
+  },
+  {
+    "id": "e607b6b5-38aa-4c9c-a669-89f1ad33c939",
+    "title": "44 recall-recalibrating-capability-degradation-for-mllm-based-composed-image-retrieval 2602.01639v1",
+    "originalFilename": "44_recall-recalibrating-capability-degradation-for-mllm-based-composed-image-retrieval_2602.01639v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.272Z",
+    "sizeBytes": 2317366
+  },
+  {
+    "id": "18c8b1e2-299e-461b-9160-9dd0d881b53e",
+    "title": "43 steering-vector-fields-for-context-aware-inference-time-control-in-large-language-models 2602.01654v1",
+    "originalFilename": "43_steering-vector-fields-for-context-aware-inference-time-control-in-large-language-models_2602.01654v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.267Z",
+    "sizeBytes": 1017244
+  },
+  {
+    "id": "f55415f1-0d88-44ae-9ece-110fcd22380e",
+    "title": "42 projdevbench-benchmarking-ai-coding-agents-on-end-to-end-project-development 2602.01655v1",
+    "originalFilename": "42_projdevbench-benchmarking-ai-coding-agents-on-end-to-end-project-development_2602.01655v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.264Z",
+    "sizeBytes": 1310748
+  },
+  {
+    "id": "8cf91beb-efc0-47c6-868c-c4aa4e81952d",
+    "title": "41 counting-hypothesis-potential-mechanism-of-in-context-learning 2602.01687v1",
+    "originalFilename": "41_counting-hypothesis-potential-mechanism-of-in-context-learning_2602.01687v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.260Z",
+    "sizeBytes": 6342099
+  },
+  {
+    "id": "4251c406-128c-4467-a959-1eb7c3ecea43",
+    "title": "40 what-llms-think-when-you-don-t-tell-them-what-to-think-about 2602.01689v1",
+    "originalFilename": "40_what-llms-think-when-you-don-t-tell-them-what-to-think-about_2602.01689v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.252Z",
+    "sizeBytes": 25320966
+  },
+  {
+    "id": "d9668836-116d-4375-a40c-f17bf9c05e31",
+    "title": "39 beyond-mode-elicitation-diversity-preserving-reinforcement-learning-via-latent-diffusion-reasoner 2602.01705v1",
+    "originalFilename": "39_beyond-mode-elicitation-diversity-preserving-reinforcement-learning-via-latent-diffusion-reasoner_2602.01705v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.229Z",
+    "sizeBytes": 4892564
+  },
+  {
+    "id": "7e02cbe4-e8f9-4a5d-bac7-753bcc5dde29",
+    "title": "38 game-of-thought-robust-information-seeking-with-large-language-models-using-game-theory 2602.01708v1",
+    "originalFilename": "38_game-of-thought-robust-information-seeking-with-large-language-models-using-game-theory_2602.01708v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.222Z",
+    "sizeBytes": 1513073
+  },
+  {
+    "id": "a1750f12-9aa7-4b60-a606-fc6303b4eb52",
+    "title": "37 optimizing-prompts-for-large-language-models-a-causal-approach 2602.01711v1",
+    "originalFilename": "37_optimizing-prompts-for-large-language-models-a-causal-approach_2602.01711v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.218Z",
+    "sizeBytes": 3673717
+  },
+  {
+    "id": "6486aebb-9c96-4df6-a848-eda62ded01cc",
+    "title": "36 comet-collaborative-memory-transformer-for-efficient-long-context-modeling 2602.01766v1",
+    "originalFilename": "36_comet-collaborative-memory-transformer-for-efficient-long-context-modeling_2602.01766v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.213Z",
+    "sizeBytes": 2454342
+  },
+  {
+    "id": "b9f3ec6f-0405-40ec-be7e-5dfdddd8232d",
+    "title": "35 sog-k-one-llm-token-for-explicit-graph-structural-understanding 2602.01771v1",
+    "originalFilename": "35_sog-k-one-llm-token-for-explicit-graph-structural-understanding_2602.01771v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.208Z",
+    "sizeBytes": 6540988
+  },
+  {
+    "id": "2e72cdb3-38af-42ff-964d-653f313ebfcc",
+    "title": "34 redvisor-reasoning-aware-prompt-injection-defense-via-zero-copy-kv-cache-reuse 2602.01795v1",
+    "originalFilename": "34_redvisor-reasoning-aware-prompt-injection-defense-via-zero-copy-kv-cache-reuse_2602.01795v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.201Z",
+    "sizeBytes": 693594
+  },
+  {
+    "id": "ced99f10-f80a-4867-99f1-ece1669cdce7",
+    "title": "33 concept-based-dictionary-learning-for-inference-time-safety-in-vision-language-action-models 2602.01834v1",
+    "originalFilename": "33_concept-based-dictionary-learning-for-inference-time-safety-in-vision-language-action-models_2602.01834v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.198Z",
+    "sizeBytes": 10620964
+  },
+  {
+    "id": "a53c5688-782d-4deb-8d7c-79ee88d3eb8a",
+    "title": "32 from-code-centric-to-concept-centric-teaching-nlp-with-llm-assisted-vibe-coding 2602.01919v1",
+    "originalFilename": "32_from-code-centric-to-concept-centric-teaching-nlp-with-llm-assisted-vibe-coding_2602.01919v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.181Z",
+    "sizeBytes": 141510
+  },
+  {
+    "id": "f365870a-0ab7-4d9e-9db7-22c1de10e69f",
+    "title": "31 human-society-inspired-approaches-to-agentic-ai-security-the-4c-framework 2602.01942v1",
+    "originalFilename": "31_human-society-inspired-approaches-to-agentic-ai-security-the-4c-framework_2602.01942v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.179Z",
+    "sizeBytes": 832915
+  },
+  {
+    "id": "bee2cad8-4a90-4df3-908c-a4f3479e4ddd",
+    "title": "30 from-latent-signals-to-reflection-behavior-tracing-meta-cognitive-activation-trajectory-in-r1-style-llms 2602.01999v1",
+    "originalFilename": "30_from-latent-signals-to-reflection-behavior-tracing-meta-cognitive-activation-trajectory-in-r1-style-llms_2602.01999v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.177Z",
+    "sizeBytes": 23688785
+  },
+  {
+    "id": "ca4a38ca-a443-42ae-b1ec-ee7cf4d00488",
+    "title": "29 no-global-plan-in-chain-of-thought-uncover-the-latent-planning-horizon-of-llms 2602.02103v1",
+    "originalFilename": "29_no-global-plan-in-chain-of-thought-uncover-the-latent-planning-horizon-of-llms_2602.02103v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.147Z",
+    "sizeBytes": 3843749
+  },
+  {
+    "id": "78faa62d-d2aa-4b3b-95a4-603d7764a6d4",
+    "title": "28 the-shape-of-beliefs-geometry-dynamics-and-interventions-along-representation-manifolds-of-language-models-posteriors 2602.02315v1",
+    "originalFilename": "28_the-shape-of-beliefs-geometry-dynamics-and-interventions-along-representation-manifolds-of-language-models-posteriors_2602.02315v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.142Z",
+    "sizeBytes": 18332102
+  },
+  {
+    "id": "c5b52a11-bee9-4ba2-a4fc-eaf6e32c5825",
+    "title": "27 a-large-scale-dataset-for-molecular-structure-language-description-via-a-rule-regularized-method 2602.02320v1",
+    "originalFilename": "27_a-large-scale-dataset-for-molecular-structure-language-description-via-a-rule-regularized-method_2602.02320v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.122Z",
+    "sizeBytes": 898645
+  },
+  {
+    "id": "19b58cee-3a37-4135-8655-c31759164da2",
+    "title": "26 language-steering-for-multilingual-in-context-learning 2602.02326v1",
+    "originalFilename": "26_language-steering-for-multilingual-in-context-learning_2602.02326v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.119Z",
+    "sizeBytes": 1043208
+  },
+  {
+    "id": "8c9f59f0-955a-4363-9f44-caf881d6ece7",
+    "title": "25 longvpo-from-anchored-cues-to-self-reasoning-for-long-form-video-preference-optimization 2602.02341v1",
+    "originalFilename": "25_longvpo-from-anchored-cues-to-self-reasoning-for-long-form-video-preference-optimization_2602.02341v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.116Z",
+    "sizeBytes": 3803744
+  },
+  {
+    "id": "c608b8f8-5d83-4953-8dfe-cf1283e030d7",
+    "title": "24 context-learning-for-multi-agent-discussion 2602.02350v1",
+    "originalFilename": "24_context-learning-for-multi-agent-discussion_2602.02350v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.110Z",
+    "sizeBytes": 3256027
+  },
+  {
+    "id": "ec0b12ff-83f1-49ab-98c5-362ba53016d5",
+    "title": "23 automated-multiple-mini-interview-mmi-scoring 2602.02360v1",
+    "originalFilename": "23_automated-multiple-mini-interview-mmi-scoring_2602.02360v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.105Z",
+    "sizeBytes": 470606
+  },
+  {
+    "id": "45f1a8c1-1e99-40db-8b65-617b724850c8",
+    "title": "22 reasoncache-teaching-llms-to-reason-without-weight-updates 2602.02366v1",
+    "originalFilename": "22_reasoncache-teaching-llms-to-reason-without-weight-updates_2602.02366v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.103Z",
+    "sizeBytes": 2654524
+  },
+  {
+    "id": "41cd8d34-c7b4-424b-9ead-559e2eaa8e7e",
+    "title": "21 live-evo-online-evolution-of-agentic-memory-from-continuous-feedback 2602.02369v1",
+    "originalFilename": "21_live-evo-online-evolution-of-agentic-memory-from-continuous-feedback_2602.02369v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.097Z",
+    "sizeBytes": 1254289
+  },
+  {
+    "id": "10b4e14c-cecf-433e-a9b2-f8aa0c852e34",
+    "title": "20 proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof 2602.02377v1",
+    "originalFilename": "20_proof-rm-a-scalable-and-generalizable-reward-model-for-math-proof_2602.02377v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.090Z",
+    "sizeBytes": 4607940
+  },
+  {
+    "id": "b8a10737-6fd0-440a-98a5-27ac5b3a619f",
+    "title": "19 from-sycophancy-to-sensemaking-premise-governance-for-human-ai-decision-making 2602.02378v1",
+    "originalFilename": "19_from-sycophancy-to-sensemaking-premise-governance-for-human-ai-decision-making_2602.02378v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.081Z",
+    "sizeBytes": 96410
+  },
+  {
+    "id": "9e9cdc64-f11b-47ef-a5fd-803c142a4f83",
+    "title": "18 rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs 2602.02382v1",
+    "originalFilename": "18_rog-retrieval-augmented-llm-reasoning-for-complex-first-order-queries-over-knowledge-graphs_2602.02382v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.080Z",
+    "sizeBytes": 1133806
+  },
+  {
+    "id": "64be3897-c085-4f04-9ca1-770a1227862d",
+    "title": "17 trust-by-design-skill-profiles-for-transparent-cost-aware-llm-routing 2602.02386v1",
+    "originalFilename": "17_trust-by-design-skill-profiles-for-transparent-cost-aware-llm-routing_2602.02386v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.077Z",
+    "sizeBytes": 526088
+  },
+  {
+    "id": "eb0251e9-e2e4-49a3-bfc2-7ad22a694d5f",
+    "title": "16 david-vs-goliath-verifiable-agent-to-agent-jailbreaking-via-reinforcement-learning 2602.02395v1",
+    "originalFilename": "16_david-vs-goliath-verifiable-agent-to-agent-jailbreaking-via-reinforcement-learning_2602.02395v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.075Z",
+    "sizeBytes": 510756
+  },
+  {
+    "id": "283c5295-f69e-4f7f-9a68-550cae7402d8",
+    "title": "15 misconception-diagnosis-from-student-tutor-dialogue-generate-retrieve-rerank 2602.02414v1",
+    "originalFilename": "15_misconception-diagnosis-from-student-tutor-dialogue-generate-retrieve-rerank_2602.02414v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.073Z",
+    "sizeBytes": 1142491
+  },
+  {
+    "id": "cbfb8928-251d-460f-9701-22144368a2e9",
+    "title": "14 structure-enables-effective-self-localization-of-errors-in-llms 2602.02416v1",
+    "originalFilename": "14_structure-enables-effective-self-localization-of-errors-in-llms_2602.02416v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.071Z",
+    "sizeBytes": 1397750
+  },
+  {
+    "id": "6c3f10fe-4c2c-4037-9aee-19b83b5a409b",
+    "title": "13 large-language-models-for-mental-health-a-multilingual-evaluation 2602.02440v1",
+    "originalFilename": "13_large-language-models-for-mental-health-a-multilingual-evaluation_2602.02440v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.067Z",
+    "sizeBytes": 275210
+  },
+  {
+    "id": "72703ec6-58f6-49a8-b699-2509366aeb7d",
+    "title": "12 certain-head-uncertain-tail-expert-sample-for-test-time-scaling-in-fine-grained-moe 2602.02443v1",
+    "originalFilename": "12_certain-head-uncertain-tail-expert-sample-for-test-time-scaling-in-fine-grained-moe_2602.02443v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.066Z",
+    "sizeBytes": 1392163
+  },
+  {
+    "id": "17f9ea82-7a1a-4252-8365-bec19bcd2445",
+    "title": "11 thinking-with-comics-enhancing-multimodal-reasoning-through-structured-visual-storytelling 2602.02453v1",
+    "originalFilename": "11_thinking-with-comics-enhancing-multimodal-reasoning-through-structured-visual-storytelling_2602.02453v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.063Z",
+    "sizeBytes": 25193179
+  },
+  {
+    "id": "284d85e9-3e2d-4664-ae31-d0c838ee3cad",
+    "title": "10 drift-bench-diagnosing-cooperative-breakdowns-in-llm-agents-under-input-faults-via-multi-turn-interaction 2602.02455v1",
+    "originalFilename": "10_drift-bench-diagnosing-cooperative-breakdowns-in-llm-agents-under-input-faults-via-multi-turn-interaction_2602.02455v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.023Z",
+    "sizeBytes": 8694005
+  },
+  {
+    "id": "eee709a8-9cbb-41a9-b5c9-8285373c0c36",
+    "title": "09 metaclass-metacognitive-coaching-for-learning-with-adaptive-self-regulation-support 2602.02457v1",
+    "originalFilename": "09_metaclass-metacognitive-coaching-for-learning-with-adaptive-self-regulation-support_2602.02457v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.011Z",
+    "sizeBytes": 4220541
+  },
+  {
+    "id": "6c6819ee-0467-46cc-9624-33ee42c2677b",
+    "title": "08 mentisoculi-revealing-the-limits-of-reasoning-with-mental-imagery 2602.02465v1",
+    "originalFilename": "08_mentisoculi-revealing-the-limits-of-reasoning-with-mental-imagery_2602.02465v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:25.003Z",
+    "sizeBytes": 21819653
+  },
+  {
+    "id": "aec3e20c-28a7-48e7-aab1-262dc4b54076",
+    "title": "07 indications-of-belief-guided-agency-and-meta-cognitive-monitoring-in-large-language-models 2602.02467v1",
+    "originalFilename": "07_indications-of-belief-guided-agency-and-meta-cognitive-monitoring-in-large-language-models_2602.02467v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:24.976Z",
+    "sizeBytes": 1043770
+  },
+  {
+    "id": "b5736e5d-1878-4132-9ad7-6348f26f936d",
+    "title": "06 avenir-web-human-experience-imitating-multimodal-web-agents-with-mixture-of-grounding-experts 2602.02468v1",
+    "originalFilename": "06_avenir-web-human-experience-imitating-multimodal-web-agents-with-mixture-of-grounding-experts_2602.02468v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:24.972Z",
+    "sizeBytes": 6760309
+  },
+  {
+    "id": "ac111351-3d69-44f7-866f-7ccc8567a73b",
+    "title": "05 agentrx-diagnosing-ai-agent-failures-from-execution-trajectories 2602.02475v1",
+    "originalFilename": "05_agentrx-diagnosing-ai-agent-failures-from-execution-trajectories_2602.02475v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:24.962Z",
+    "sizeBytes": 616888
+  },
+  {
+    "id": "04c02ccc-7496-4fe3-9c15-15d1e3c26f36",
+    "title": "04 training-llms-for-divide-and-conquer-reasoning-elevates-test-time-scalability 2602.02477v1",
+    "originalFilename": "04_training-llms-for-divide-and-conquer-reasoning-elevates-test-time-scalability_2602.02477v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:24.959Z",
+    "sizeBytes": 1513429
+  },
+  {
+    "id": "dee2beae-b477-4986-a0e7-f7173f4f5d1c",
+    "title": "03 expanding-the-capabilities-of-reinforcement-learning-via-text-feedback 2602.02482v1",
+    "originalFilename": "03_expanding-the-capabilities-of-reinforcement-learning-via-text-feedback_2602.02482v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:24.955Z",
+    "sizeBytes": 1361860
+  },
+  {
+    "id": "cbb75d2e-f8fc-4fa7-982f-9f2b58221d9c",
+    "title": "02 re-trac-recursive-trajectory-compression-for-deep-search-agents 2602.02486v1",
+    "originalFilename": "02_re-trac-recursive-trajectory-compression-for-deep-search-agents_2602.02486v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:24.952Z",
+    "sizeBytes": 836472
+  },
+  {
+    "id": "ae297a33-1baf-4c5c-b57a-d3eb374780ec",
+    "title": "01 reward-free-alignment-for-conflicting-objectives 2602.02495v1",
+    "originalFilename": "01_reward-free-alignment-for-conflicting-objectives_2602.02495v1.pdf",
+    "tags": [
+      "seed"
+    ],
+    "uploadedAt": "2026-02-03T19:37:24.949Z",
+    "sizeBytes": 950735
+  }
+]

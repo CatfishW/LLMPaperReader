@@ -8,7 +8,7 @@ export function absoluteUrl(path: string): string {
 }
 
 export function paperCoverUrl(id: string): string {
-  return `${apiBase}/papers/${id}/cover`
+  return `${apiBase}/papers/${id}/cover?v=2`
 }
 
 export function paperFileUrl(id: string, download = false): string {

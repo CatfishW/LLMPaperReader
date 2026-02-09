@@ -209,6 +209,7 @@ app.get(`${API_BASE}/papers/:id/cover`, async (req: Request, res: Response) => {
     const paperDir = resolvePaperDir(id)
     const coverPath = path.join(paperDir, 'cover.png')
     await fsp.access(coverPath)
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
     res.type('png')
     res.sendFile(coverPath)
   } catch {
@@ -230,6 +231,7 @@ app.get(`${API_BASE}/papers/:id/file`, async (req: Request, res: Response) => {
       res.download(pdfPath, filename)
       return
     }
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
     res.type('application/pdf')
     res.sendFile(pdfPath)
   } catch {
@@ -341,8 +343,17 @@ app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
 
 const clientDist = path.join(ROOT_DIR, 'dist')
 if (fs.existsSync(clientDist)) {
-  app.use(BASE_PATH, express.static(clientDist))
+  app.use(BASE_PATH, express.static(clientDist, {
+    setHeaders: (res, filePath) => {
+      if (filePath.endsWith('.html')) {
+        res.setHeader('Cache-Control', 'public, max-age=0')
+      } else {
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+      }
+    }
+  }))
   app.get([BASE_PATH || '/', `${BASE_PATH}/*`], (_req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=0')
     res.sendFile(path.join(clientDist, 'index.html'))
   })
 }
