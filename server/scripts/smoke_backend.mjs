@@ -126,6 +126,32 @@ async function main() {
     assert(Array.isArray(list) && !list.some((p) => p && p.id === id), 'paper still present after delete')
   }
 
+  // Upload without cover: should still succeed and cover should be generated (or at least not crash).
+  {
+    const form2 = new FormData()
+    form2.append('pdf', new File([pdfBuf], path.basename(pdfPath), { type: 'application/octet-stream' }))
+    form2.append('title', 'Smoke Test No Cover')
+    form2.append('tags', 'smoke,mobile')
+
+    const created2 = await (
+      await fetchOk(`${apiBase}/papers`, {
+        method: 'POST',
+        body: form2
+      })
+    ).json()
+
+    assert(created2 && typeof created2.id === 'string', 'upload (no cover) did not return an id')
+    const id2 = created2.id
+
+    const res2 = await fetchOk(`${apiBase}/papers/${id2}/cover`)
+    const buf2 = Buffer.from(await res2.arrayBuffer())
+    const dims2 = pngDimensions(buf2.subarray(0, 64))
+    assert(dims2 && dims2.width > 1 && dims2.height > 1, `cover (no cover upload) did not render (${dims2?.width}x${dims2?.height})`)
+
+    const del2 = await fetch(`${apiBase}/papers/${id2}`, { method: 'DELETE' })
+    assert(del2.status === 204, `delete status expected 204, got ${del2.status}`)
+  }
+
   console.log('SMOKE OK')
 }
 

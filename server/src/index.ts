@@ -334,7 +334,17 @@ const upload = multer({
   limits: { fileSize: MAX_PDF_BYTES },
   fileFilter: (_req: Request, file: Express.Multer.File, cb: FileFilterCallback) => {
     if (file.fieldname === 'pdf') {
-      if (file.mimetype === 'application/pdf') return cb(null, true)
+      // Mobile browsers sometimes send `application/octet-stream` for PDFs.
+      // We validate by magic bytes after upload, so accept a wider set here.
+      if (
+        file.mimetype === 'application/pdf' ||
+        file.mimetype === 'application/octet-stream' ||
+        file.mimetype === 'binary/octet-stream' ||
+        file.mimetype === 'application/x-pdf' ||
+        file.mimetype === ''
+      ) {
+        return cb(null, true)
+      }
       return cb(new Error('PDF only'))
     }
     if (file.fieldname === 'cover') {
@@ -436,19 +446,21 @@ app.post(`${API_BASE}/papers`, upload.fields([{ name: 'pdf', maxCount: 1 }, { na
   let pdfPath: string | undefined
   let coverPath: string | undefined
   try {
-    const files = req.files as { [field: string]: Express.Multer.File[] }
-    const pdfFile = files?.pdf?.[0]
-    const coverFile = files?.cover?.[0]
+    const files = req.files as Record<string, Express.Multer.File[] | undefined> | undefined
+    const pdfFiles = files?.pdf
+    const coverFiles = files?.cover
+    const pdfFile = pdfFiles?.[0]
+    const coverFile = coverFiles?.[0]
     pdfPath = pdfFile?.path
     coverPath = coverFile?.path
-    if (!pdfFile || !coverFile) {
-      await safeRemove(pdfFile?.path)
-      await safeRemove(coverFile?.path)
+    if (!pdfFile) {
+      await safeRemove(pdfPath)
+      await safeRemove(coverPath)
       return res.status(400).json({ error: 'Missing files' })
     }
     if (pdfFile.size > MAX_PDF_BYTES) {
       await safeRemove(pdfFile.path)
-      await safeRemove(coverFile.path)
+      await safeRemove(coverFile?.path)
       return res.status(413).json({ error: 'PDF too large' })
     }
 
@@ -458,7 +470,7 @@ app.post(`${API_BASE}/papers`, upload.fields([{ name: 'pdf', maxCount: 1 }, { na
     await fileHandle.close()
     if (headerBuffer.toString('utf8') !== '%PDF') {
       await safeRemove(pdfFile.path)
-      await safeRemove(coverFile.path)
+      await safeRemove(coverFile?.path)
       return res.status(400).json({ error: 'Invalid PDF' })
     }
 
@@ -480,7 +492,12 @@ app.post(`${API_BASE}/papers`, upload.fields([{ name: 'pdf', maxCount: 1 }, { na
     const pdfDest = path.join(paperDir, 'paper.pdf')
     const coverDest = path.join(paperDir, 'cover.png')
     await fsp.rename(pdfFile.path, pdfDest)
-    await fsp.rename(coverFile.path, coverDest)
+    if (coverFile?.path) {
+      await fsp.rename(coverFile.path, coverDest)
+    } else {
+      // Allow PDF-only uploads (useful on mobile if client-side cover rendering fails).
+      await fsp.writeFile(coverDest, PLACEHOLDER_COVER_PNG)
+    }
 
     // Ensure we stored a real PNG and avoid persisting 1x1 placeholder covers.
     {
@@ -495,6 +512,11 @@ app.post(`${API_BASE}/papers`, upload.fields([{ name: 'pdf', maxCount: 1 }, { na
       if (dims.width === 1 && dims.height === 1) {
         await fsp.writeFile(coverDest, PLACEHOLDER_COVER_PNG)
       }
+    }
+
+    // If the cover is still a placeholder, try generating it server-side from the PDF.
+    if (await isPlaceholderCover(coverDest)) {
+      await generateCoverWithPython(id, pdfDest, coverDest)
     }
 
     const metadata: PaperMetadata = {
@@ -564,7 +586,45 @@ app.use((err: Error & { code?: string }, _req: Request, res: Response, _next: Ne
 
 const clientDist = path.join(ROOT_DIR, 'dist')
 if (fs.existsSync(clientDist)) {
+  const MOBILE_CSS = `
+/* Server-side injected mobile overrides (keeps frontend files untouched). */
+@media (max-width: 980px) {
+  html, body { overflow-x: hidden; }
+  .library-grid { grid-template-columns: 1fr !important; }
+  .paper-actions-inline {
+    position: static !important;
+    opacity: 1 !important;
+    transform: none !important;
+    padding: 12px 16px 0 !important;
+  }
+}
+`.trim()
+
+  function isMobileUserAgent(ua?: string): boolean {
+    const s = (ua || '').toLowerCase()
+    return s.includes('android') || s.includes('iphone') || s.includes('ipad') || s.includes('ipod') || s.includes('mobile')
+  }
+
+  async function sendIndexHtml(req: Request, res: Response): Promise<void> {
+    const indexPath = path.join(clientDist, 'index.html')
+    let html = await fsp.readFile(indexPath, 'utf8')
+
+    const forceMobile = req.query.mobile === '1'
+    if (forceMobile || isMobileUserAgent(req.headers['user-agent'])) {
+      if (!html.includes('llmpr-mobile-overrides')) {
+        html = html.replace(
+          '</head>',
+          `<style id="llmpr-mobile-overrides">${MOBILE_CSS}</style></head>`
+        )
+      }
+    }
+
+    res.setHeader('Cache-Control', 'public, max-age=0')
+    res.type('html').send(html)
+  }
+
   app.use(BASE_PATH, express.static(clientDist, {
+    index: false,
     setHeaders: (res, filePath) => {
       if (filePath.endsWith('.html')) {
         res.setHeader('Cache-Control', 'public, max-age=0')
@@ -573,9 +633,8 @@ if (fs.existsSync(clientDist)) {
       }
     }
   }))
-  app.get([BASE_PATH || '/', `${BASE_PATH}/*`], (_req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=0')
-    res.sendFile(path.join(clientDist, 'index.html'))
+  app.get([BASE_PATH || '/', `${BASE_PATH}/*`], async (req, res) => {
+    await sendIndexHtml(req, res)
   })
 }
 
