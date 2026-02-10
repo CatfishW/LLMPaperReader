@@ -580,12 +580,13 @@ if (fs.existsSync(clientDist)) {
 }
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3001
+const HOST = process.env.HOST ? String(process.env.HOST) : '0.0.0.0'
 
 ensureStorage()
   .then(() => ensureRemoteStorage())
   .then(() => {
-    app.listen(PORT, () => {
-      console.log(`LLMPaperReader server running on http://localhost:${PORT}`)
+    app.listen(PORT, HOST, () => {
+      console.log(`LLMPaperReader server running on http://${HOST}:${PORT}${BASE_PATH || '/'}`)
     })
   })
 
