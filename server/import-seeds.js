@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import { fileURLToPath } from 'url';
+import { spawnSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,11 +17,36 @@ const SEED_DIRS = [
   path.join(DATA_DIR, 'seed-papers-final')
 ];
 
-// 1x1 transparent PNG
+// 360x480 placeholder PNG (avoids 1x1 "broken" thumbnails for seed imports)
 const DEFAULT_COVER_BUFFER = Buffer.from(
-  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=',
+  'iVBORw0KGgoAAAANSUhEUgAAAWgAAAHgCAYAAACIBvdgAAAFQElEQVR42u3UoQ0AIRREQfovD4HCkKDwd8FB6OITRswWsOKlXOoCIJ50pvUBQCACDSDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAINgEADCDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAININACDSDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAININACDSDQAAg0gEADINAAjwb6+ycAgQg0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQDsDQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoAUaQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBoAgQYQaAAEGkCgARBoAIEGQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoJ0BINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0AININAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg2AQAMINAACDSDQAAg0gEADINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0M4AEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQYQaIEGEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQZAoAEEGgCBBhBoAAQaQKABEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQYQaGcACDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMItEADCDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAIt0AACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQDsDQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoAUaQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBoAgQYQaAAEGkCgARBoAIEGQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoJ0BINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0AININAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg2AQAMINAACDSDQAAg0gEADINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0M4AEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQYQaIEGEGgABBpAoAEQaACBBkCgARBogCsDDUA8Gwg3tuje8X9vAAAAAElFTkSuQmCC',
   'base64'
 );
+
+function resolveCovergenPython(rootDir) {
+  if (process.env.COVERGEN_PYTHON) return process.env.COVERGEN_PYTHON;
+  const venvPython = path.join(rootDir, 'server_py', 'venv', 'bin', 'python');
+  if (fs.existsSync(venvPython)) return venvPython;
+  const py3 = '/usr/bin/python3';
+  if (fs.existsSync(py3)) return py3;
+  return null;
+}
+
+function tryGenerateCover(rootDir, pdfPath, outPngPath) {
+  const python = resolveCovergenPython(rootDir);
+  const script = path.join(rootDir, 'server_py', 'covergen.py');
+  if (!python || !fs.existsSync(script) || !fs.existsSync(pdfPath)) return false;
+
+  const res = spawnSync(python, [script, pdfPath, outPngPath, '--max-width', '640'], {
+    encoding: 'utf8',
+    stdio: ['ignore', 'ignore', 'pipe']
+  });
+  if (res.status === 0) return true;
+
+  const stderr = (res.stderr || '').trim();
+  if (stderr) console.warn('covergen failed:', stderr);
+  return false;
+}
 
 async function main() {
   console.log('Starting import...');
@@ -64,7 +90,9 @@ async function main() {
       const destMetaPath = path.join(paperDir, 'metadata.json');
 
       fs.copyFileSync(srcPath, destPdfPath);
-      fs.writeFileSync(destCoverPath, DEFAULT_COVER_BUFFER);
+      if (!tryGenerateCover(ROOT_DIR, destPdfPath, destCoverPath)) {
+        fs.writeFileSync(destCoverPath, DEFAULT_COVER_BUFFER);
+      }
 
       const stats = fs.statSync(srcPath);
       const title = path.basename(file, '.pdf').replace(/_/g, ' ');

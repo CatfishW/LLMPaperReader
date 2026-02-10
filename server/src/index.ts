@@ -5,6 +5,7 @@ import fs from 'fs'
 import { promises as fsp } from 'fs'
 import crypto from 'crypto'
 import { fileURLToPath } from 'url'
+import { spawn } from 'child_process'
 import type { Request, Response, NextFunction } from 'express'
 import type { FileFilterCallback } from 'multer'
 
@@ -21,6 +22,95 @@ const REMOTE_DATA_DIR = process.env.REMOTE_DATA_DIR
 const REMOTE_PAPERS_DIR = REMOTE_DATA_DIR ? path.join(REMOTE_DATA_DIR, 'papers') : null
 const REMOTE_INDEX_FILE = REMOTE_DATA_DIR ? path.join(REMOTE_DATA_DIR, 'index.json') : null
 const MAX_PDF_BYTES = 50 * 1024 * 1024
+const PNG_SIG = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])
+
+// 360x480 placeholder PNG to avoid "broken" 1x1 thumbnails (e.g. seed imports).
+const PLACEHOLDER_COVER_PNG = Buffer.from(
+  'iVBORw0KGgoAAAANSUhEUgAAAWgAAAHgCAYAAACIBvdgAAAFQElEQVR42u3UoQ0AIRREQfovD4HCkKDwd8FB6OITRswWsOKlXOoCIJ50pvUBQCACDSDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAINgEADCDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAININACDSDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAININACDSDQAAg0gEADINAAjwb6+ycAgQg0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQDsDQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoAUaQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBoAgQYQaAAEGkCgARBoAIEGQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoJ0BINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0AININAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg2AQAMINAACDSDQAAg0gEADINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0M4AEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQYQaIEGEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQZAoAEEGgCBBhBoAAQaQKABEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQYQaGcACDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMItEADCDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMg0AACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAIt0AACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAg0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQAs0gEADINAAAg2AQAMINAACDYBAAwg0AAININAACDQAAg0g0AAINIBAAyDQAAINgEADINAAAg2AQAMINAACDYBAAwg0AAININAACDSAQDsDQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoAUaQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBoAgQYQaAAEGkCgARBoAIEGQKABEGgAgQZAoAEEGgCBBkCgAQQaAIEGEGgABBpAoJ0BINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0AININAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg2AQAMINAACDSDQAAg0gEADINAACDSAQAMg0AACDYBAAyDQAAINgEADCDQAAg0g0M4AEGgABBpAoAEQaACBBkCgARBoAIEGQKABBBoAgQYQaIEGEGgABBpAoAEQaACBBkCgARBogCsDDUA8Gwg3tuje8X9vAAAAAElFTkSuQmCC',
+  'base64'
+)
+
+function resolveCovergenPython(rootDir: string): string | null {
+  if (process.env.COVERGEN_PYTHON) return process.env.COVERGEN_PYTHON
+  const venvPython = path.join(rootDir, 'server_py', 'venv', 'bin', 'python')
+  if (fs.existsSync(venvPython)) return venvPython
+  const py3 = '/usr/bin/python3'
+  if (fs.existsSync(py3)) return py3
+  return null
+}
+
+const COVERGEN_PYTHON = resolveCovergenPython(ROOT_DIR)
+const COVERGEN_SCRIPT = path.join(ROOT_DIR, 'server_py', 'covergen.py')
+const COVERGEN_MAX_CONCURRENCY = process.env.COVERGEN_CONCURRENCY ? Number(process.env.COVERGEN_CONCURRENCY) : 2
+const covergenFailures = new Map<string, number>() // id -> ms timestamp to retry after
+const covergenInFlight = new Map<string, Promise<void>>() // id -> promise
+let covergenActive = 0
+const covergenWaiters: Array<() => void> = []
+
+async function covergenAcquire(): Promise<void> {
+  if (covergenActive < COVERGEN_MAX_CONCURRENCY) {
+    covergenActive += 1
+    return
+  }
+  await new Promise<void>((resolve) => covergenWaiters.push(resolve))
+  covergenActive += 1
+}
+
+function covergenRelease(): void {
+  covergenActive = Math.max(0, covergenActive - 1)
+  const next = covergenWaiters.shift()
+  if (next) next()
+}
+
+async function generateCoverWithPython(id: string, pdfPath: string, coverPath: string): Promise<void> {
+  if (!COVERGEN_PYTHON) return
+  if (!fs.existsSync(COVERGEN_SCRIPT)) return
+  if (!fs.existsSync(pdfPath)) return
+
+  const now = Date.now()
+  const failedUntil = covergenFailures.get(id)
+  if (failedUntil && failedUntil > now) return
+
+  const existing = covergenInFlight.get(id)
+  if (existing) return existing
+
+  const job = (async () => {
+    await covergenAcquire()
+    try {
+      await new Promise<void>((resolve, reject) => {
+        const proc = spawn(COVERGEN_PYTHON, [COVERGEN_SCRIPT, pdfPath, coverPath, '--max-width', '640'], {
+          stdio: ['ignore', 'ignore', 'pipe']
+        })
+        let stderr = ''
+        proc.stderr.on('data', (chunk) => {
+          stderr += chunk.toString('utf8')
+          if (stderr.length > 8_000) stderr = stderr.slice(-8_000)
+        })
+        const timeout = setTimeout(() => {
+          proc.kill('SIGKILL')
+          reject(new Error('covergen timeout'))
+        }, 25_000)
+        proc.on('error', reject)
+        proc.on('exit', (code) => {
+          clearTimeout(timeout)
+          if (code === 0) resolve()
+          else reject(new Error(`covergen failed (${code}): ${stderr.trim()}`))
+        })
+      })
+    } catch (err) {
+      console.warn('covergen failed', id, err)
+      // Back off for 10 minutes on failure.
+      covergenFailures.set(id, Date.now() + 10 * 60 * 1000)
+    } finally {
+      covergenRelease()
+    }
+  })().finally(() => {
+    covergenInFlight.delete(id)
+  })
+
+  covergenInFlight.set(id, job)
+  return job
+}
 
 const app = express()
 app.disable('x-powered-by')
@@ -45,6 +135,52 @@ function sanitizeFilename(name: string): string {
 
 function isValidId(id: string): boolean {
   return /^[a-f0-9-]{36}$/i.test(id)
+}
+
+function pngDimensionsFromHeader(buf: Buffer): { width: number; height: number } | null {
+  if (buf.length < 29) return null
+  if (!buf.subarray(0, 8).equals(PNG_SIG)) return null
+  if (buf.subarray(12, 16).toString('ascii') !== 'IHDR') return null
+  const width = buf.readUInt32BE(16)
+  const height = buf.readUInt32BE(20)
+  if (!Number.isFinite(width) || !Number.isFinite(height) || width < 1 || height < 1) return null
+  return { width, height }
+}
+
+async function isPlaceholderCover(filePath: string): Promise<boolean> {
+  try {
+    const st = await fsp.stat(filePath)
+    if (st.isFile() && st.size === PLACEHOLDER_COVER_PNG.length) {
+      const buf = await fsp.readFile(filePath)
+      if (buf.equals(PLACEHOLDER_COVER_PNG)) return true
+    }
+    const fd = await fsp.open(filePath, 'r')
+    const head = Buffer.alloc(64)
+    await fd.read(head, 0, 64, 0)
+    await fd.close()
+    const dims = pngDimensionsFromHeader(head)
+    return !!dims && dims.width === 1 && dims.height === 1
+  } catch {
+    return false
+  }
+}
+
+function sendFileAsync(res: Response, filePath: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    res.sendFile(filePath, (err) => {
+      if (err) reject(err)
+      else resolve()
+    })
+  })
+}
+
+function downloadAsync(res: Response, filePath: string, filename: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    res.download(filePath, filename, (err) => {
+      if (err) reject(err)
+      else resolve()
+    })
+  })
 }
 
 async function ensureStorage(): Promise<void> {
@@ -74,8 +210,38 @@ async function readIndex(): Promise<PaperIndexItem[]> {
   }
 }
 
+let indexWriteChain: Promise<void> = Promise.resolve()
+
+async function withIndexLock<T>(fn: () => Promise<T>): Promise<T> {
+  const prev = indexWriteChain
+  let release: (() => void) | undefined
+  indexWriteChain = new Promise<void>((resolve) => {
+    release = resolve
+  })
+  await prev
+  try {
+    return await fn()
+  } finally {
+    release?.()
+  }
+}
+
+async function atomicWriteJson(filePath: string, value: unknown): Promise<void> {
+  const dir = path.dirname(filePath)
+  await fsp.mkdir(dir, { recursive: true })
+  const tmpPath = `${filePath}.tmp`
+  await fsp.writeFile(tmpPath, JSON.stringify(value, null, 2))
+  try {
+    await fsp.rename(tmpPath, filePath)
+  } catch (err) {
+    // Windows can fail to rename over an existing file; fall back to replace.
+    await fsp.rm(filePath, { force: true })
+    await fsp.rename(tmpPath, filePath)
+  }
+}
+
 async function writeIndex(items: PaperIndexItem[]): Promise<void> {
-  await fsp.writeFile(INDEX_FILE, JSON.stringify(items, null, 2))
+  await atomicWriteJson(INDEX_FILE, items)
 }
 
 async function readRemoteIndex(): Promise<PaperIndexItem[]> {
@@ -91,7 +257,7 @@ async function readRemoteIndex(): Promise<PaperIndexItem[]> {
 
 async function writeRemoteIndex(items: PaperIndexItem[]): Promise<void> {
   if (!REMOTE_INDEX_FILE) return
-  await fsp.writeFile(REMOTE_INDEX_FILE, JSON.stringify(items, null, 2))
+  await atomicWriteJson(REMOTE_INDEX_FILE, items)
 }
 
 async function safeRemove(filePath?: string): Promise<void> {
@@ -172,7 +338,11 @@ const upload = multer({
       return cb(new Error('PDF only'))
     }
     if (file.fieldname === 'cover') {
-      if (file.mimetype === 'image/png') return cb(null, true)
+      // Some clients send `image/x-png` or `application/octet-stream` even for PNGs;
+      // validate by magic bytes after upload.
+      if (file.mimetype === 'image/png' || file.mimetype === 'image/x-png' || file.mimetype === 'application/octet-stream') {
+        return cb(null, true)
+      }
       return cb(new Error('Cover must be PNG'))
     }
     return cb(new Error('Unexpected field'))
@@ -207,13 +377,36 @@ app.get(`${API_BASE}/papers/:id/cover`, async (req: Request, res: Response) => {
   if (!id || !isValidId(id)) return res.status(404).end()
   try {
     const paperDir = resolvePaperDir(id)
+    const pdfPath = path.join(paperDir, 'paper.pdf')
     const coverPath = path.join(paperDir, 'cover.png')
-    await fsp.access(coverPath)
-    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+    const exists = await fsp
+      .access(coverPath)
+      .then(() => true)
+      .catch(() => false)
+
+    // Covers may be regenerated/replaced; avoid immutable caching so fixes show up without a hard refresh.
+    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate')
     res.type('png')
-    res.sendFile(coverPath)
+
+    if (!exists || (await isPlaceholderCover(coverPath))) {
+      // Best-effort: generate a real thumbnail from the first PDF page if cover is missing/placeholder.
+      // This is a backend-only fix that makes seed papers render real thumbnails without client changes.
+      await generateCoverWithPython(id, pdfPath, coverPath)
+
+      const generatedOk = await fsp
+        .access(coverPath)
+        .then(async () => !(await isPlaceholderCover(coverPath)))
+        .catch(() => false)
+
+      if (!generatedOk) {
+        res.send(PLACEHOLDER_COVER_PNG)
+        return
+      }
+    }
+
+    await sendFileAsync(res, coverPath)
   } catch {
-    res.status(404).end()
+    res.status(200).type('png').send(PLACEHOLDER_COVER_PNG)
   }
 })
 
@@ -228,12 +421,12 @@ app.get(`${API_BASE}/papers/:id/file`, async (req: Request, res: Response) => {
     const item = index.find((entry) => entry.id === id)
     const filename = item ? sanitizeFilename(item.originalFilename) : 'paper.pdf'
     if (req.query.download === '1') {
-      res.download(pdfPath, filename)
+      await downloadAsync(res, pdfPath, filename)
       return
     }
     res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
     res.type('application/pdf')
-    res.sendFile(pdfPath)
+    await sendFileAsync(res, pdfPath)
   } catch {
     res.status(404).end()
   }
@@ -289,6 +482,21 @@ app.post(`${API_BASE}/papers`, upload.fields([{ name: 'pdf', maxCount: 1 }, { na
     await fsp.rename(pdfFile.path, pdfDest)
     await fsp.rename(coverFile.path, coverDest)
 
+    // Ensure we stored a real PNG and avoid persisting 1x1 placeholder covers.
+    {
+      const fd = await fsp.open(coverDest, 'r')
+      const head = Buffer.alloc(64)
+      await fd.read(head, 0, 64, 0)
+      await fd.close()
+      const dims = pngDimensionsFromHeader(head)
+      if (!dims) {
+        throw new Error('Cover must be PNG')
+      }
+      if (dims.width === 1 && dims.height === 1) {
+        await fsp.writeFile(coverDest, PLACEHOLDER_COVER_PNG)
+      }
+    }
+
     const metadata: PaperMetadata = {
       title,
       originalFilename,
@@ -299,17 +507,22 @@ app.post(`${API_BASE}/papers`, upload.fields([{ name: 'pdf', maxCount: 1 }, { na
 
     await fsp.writeFile(path.join(paperDir, 'metadata.json'), JSON.stringify(metadata, null, 2))
 
-    const index = await readIndex()
     const item: PaperIndexItem = { id, ...metadata }
-    index.unshift(item)
-    await writeIndex(index)
+    await withIndexLock(async () => {
+      const index = await readIndex()
+      index.unshift(item)
+      await writeIndex(index)
+    })
 
     await mirrorToRemote(id, metadata, pdfDest, coverDest)
 
     res.status(201).json(item)
-  } catch {
+  } catch (err) {
     await safeRemove(pdfPath)
     await safeRemove(coverPath)
+    const message = err instanceof Error ? err.message : ''
+    if (message.includes('Cover')) return res.status(400).json({ error: 'Cover must be PNG' })
+    if (message.includes('PDF') && message.includes('Invalid')) return res.status(400).json({ error: 'Invalid PDF' })
     res.status(500).json({ error: 'Upload failed' })
   }
 })
@@ -320,9 +533,11 @@ app.delete(`${API_BASE}/papers/:id`, async (req: Request, res: Response) => {
   try {
     const paperDir = resolvePaperDir(id)
     await fsp.rm(paperDir, { recursive: true, force: true })
-    const index = await readIndex()
-    const next = index.filter((entry) => entry.id !== id)
-    await writeIndex(next)
+    await withIndexLock(async () => {
+      const index = await readIndex()
+      const next = index.filter((entry) => entry.id !== id)
+      await writeIndex(next)
+    })
     await removeRemotePaper(id)
     res.status(204).end()
   } catch {
@@ -330,8 +545,14 @@ app.delete(`${API_BASE}/papers/:id`, async (req: Request, res: Response) => {
   }
 })
 
-app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
+app.use((err: Error & { code?: string }, _req: Request, res: Response, _next: NextFunction) => {
   void _next
+  if (err.code === 'LIMIT_FILE_SIZE') {
+    return res.status(413).json({ error: 'PDF too large' })
+  }
+  if (err.code === 'LIMIT_UNEXPECTED_FILE') {
+    return res.status(400).json({ error: 'Unexpected field' })
+  }
   if (err.message.includes('PDF') || err.message.includes('Cover')) {
     return res.status(400).json({ error: err.message })
   }
